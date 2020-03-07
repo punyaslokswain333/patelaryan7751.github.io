@@ -1,6 +1,6 @@
 Thanks for downloading this theme!
 
-Theme Name: MyResume
-Theme URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-Author: BootstrapMade
+Theme Name: Regna
+Theme URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
+Author: BootstrapMade.com
 Author URL: https://bootstrapmade.com
