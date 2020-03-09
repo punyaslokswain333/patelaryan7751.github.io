@@ -839,6 +839,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-top: 30px;
   padding: 60px 0 40px 0;
 }
+#contact6 {
+  background: #000;
+  background-size: cover;
+    margin-right: 20px;
+    margin-left: 20px;
+  margin-top: 30px;
+  padding: 60px 0 40px 0;
+}
 
 #services .box {
   margin-bottom: 30px;
