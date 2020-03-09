@@ -1,21 +1,1017 @@
-<!DOCTYPE html> 
-<html>
-    <head>
-        <title>animation</title>
-    <style>
-        body{
-            background-color: darkblue;
-            background-image: url("./1k.gif") ;
-            background-repeat: no-repeat;
-            background-size: cover;
-                
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Vassaunt 2k20</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!--slider-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <link rel="stylesheet" type="text/css" href="swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="styleskills.css">
+
+  <!-- Favicons -->
+  <link href="img/favicon.jfif" rel="icon">
+  <link href="img/apple-touch-icon.jfif" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!--==========================
+  Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#hero">Home</a></li>
+          <li><a href="#about">About Us</a></li> 
+          <li><a href="#services">Events</a></li>
+          <li><a href="#Registration">Register</a></li>
+          <li><a href="#Registration">Apply for CA</a></li>
+          <li><a href="#myphotos">Snapshots</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#testimonials">Sponsors</a>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Hero Section
+  ============================-->
+  <section id="hero">
+    <div class="hero-container">
+
+<div id="clockdiv">
+  <div>
+    <span class="days"></span>
+    <div class="smalltext">Days</div>
+  </div>
+  <div>
+    <span class="hours"></span>
+    <div class="smalltext">Hours</div>
+  </div>
+  <div>
+    <span class="minutes"></span>
+    <div class="smalltext">Minutes</div>
+  </div>
+  <div>
+    <span class="seconds"></span>
+    <div class="smalltext">Seconds</div>
+  </div>
+</div>
+     <div class="date">
+        <h3>  <a href="" class="typewrite" data-period="2000" data-type='[ "ANNUAL CULTURAL FEST OF VSSUT, BURLA" ]'>
+    <span class="wrap"></span>
+  </a>
+         </h3></div>
+<style>
+#clockdiv{
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 20px;
+}
+#about .about-container .title {
+  color: #CF1101;
+  font-weight: 700;
+  font-size: 32px;
+}
+#about .about-container p {
+  line-height: 26px;
+  font-size: 18px;
+  font-family: Roboto;
+  color: #FFFFFF;
+}
+
+#clockdiv > div{
+    padding: 8px;
+    border-radius: 3px;
+    background: #FF0000;
+    display: inline-block;
+}
+.section-header .section-title {
+    color:#111;
+    font-size: 35px;
+  }
+
+#clockdiv div > span{
+    padding: 12px;
+    border-radius: 3px;
+    background: #FA8072;
+    display: inline-block;
+}
+
+.smalltext{
+    padding-top: 3px;
+    font-size: 10px;
+}
+@media screen and (max-width: 992px) {
+  .section-header .section-title {
+    font-size: 20px;
+  }
+  #testimonials .testimonial-item h3{
+    font-size: 45px;
+  }
+  #myphotos{
+    padding: 15px;
+  }
+  #testimonials .testimonial-item h4 {
+  font-size: 15px;
+}
+.section-header .section-description
+  {
+    font-size: 12px;
+  }
+  .section-header .section-title1{
+    font-size: 20px;
+  }
+  .section-header .section-title {
+    color:#111;
+    font-size: 20px;
+  }
+  #Registration p{
+    color: #fff;
+    font-size: 12px;
+  }
+
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .section-header .section-title {
+    font-size: 20px;
+  }
+  #Registration h3{
+    font-size: 20px;
+  }
+  #testimonials .testimonial-item h3{
+    font-size: 45px;
+  }
+  #testimonials .testimonial-item h4 {
+  font-size: 15px;
+  }
+  #myphotos{
+    padding: 10px;
+  }
+
+  .section-header .section-title1{
+    font-size: 25px;
+  }
+  .section-header .section-title2 {
+    color:#FF8C00;
+    font-size: 20px;
+  }
+  .section-header .section-title {
+    color:#111;
+    font-size: 20px;
+  }
+}
+</style>
+<script>
+    function getTimeRemaining(endtime) {
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.floor((t / 1000) % 60);
+  var minutes = Math.floor((t / 1000 / 60) % 60);
+  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+  return {
+    'total': t,
+    'days': days,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+  };
+}
+
+function initializeClock(id, endtime) {
+  var clock = document.getElementById(id);
+  var daysSpan = clock.querySelector('.days');
+  var hoursSpan = clock.querySelector('.hours');
+  var minutesSpan = clock.querySelector('.minutes');
+  var secondsSpan = clock.querySelector('.seconds');
+
+  function updateClock() {
+    var t = getTimeRemaining(endtime);
+
+    daysSpan.innerHTML = t.days;
+    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+    if (t.total <= 0) {
+      clearInterval(timeinterval);
+    }
+  }
+
+  updateClock();
+  var timeinterval = setInterval(updateClock, 1000);
+}
+
+var deadline = new Date(Date.parse("March 14, 2020 09:30:00") );
+initializeClock('clockdiv', deadline);
+</script>
+
+        <script>
+        var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 5) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 2);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 2);
         }
-        </style>
-        <body>
-            <script>
-                setTimeout(function(){
-            window.location.href="index1.html";},2400);
-            </script>
-        </body>
-    </head>
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+    };</script><br><br><br><br><br><br><br><p></p>
+        
+        <a href="https://www.youtube.com/embed/QtbdANMLTtg" target="_blank"><img src="https://img.icons8.com/color/48/000000/youtube-play.png" width="50px" height="50px"></a> 
+        <p class="newp" style="color:#FF0000; font-size: 10px;"><b>VaSSaUnT Anthem</b></p>
+        
+     <!-- <iframe width="300" height="154" src="http://w2.countingdownto.com/2901909" frameborder="0"></iframe> -->
+              <nav id="stickynav">
+          <ul>
+              <li><a href="https://mobile.twitter.com/hashtag/vassaunt" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://m.facebook.com/vassaunt/" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://instagram.com/vassaunt2020?igshid=59sy649rtl91" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a></li>
+          </ul>
+     </nav>
+    </div>
+  </section><!-- #hero -->
+
+  <main id="main">
+
+       <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about">
+      <div class="container">
+        <div class="row about-container">
+            <!--      <div id="logo" class="pull-left">
+        <a href="#hero">
+            <div id="logox"><img src="img/vassaunts.png" alt="" title="" /></div></a>
+            
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!--<h1><a href="#hero">Regna</a></h1>
+      </div> -->
+          <div class="nimg">
+            <h2 class="title">About VaSSaUnT:-</h2>
+            <p class="title2">
+              VASSAUNT is the annual social and cultural festival of Veer Surendra Sai University of Technology,Burla.
+A dazzling and glamorous cultural festival in western odisha and has set a trademark ever since its initiation.
+This year VASSAUNT comes with Bollywood ishstyle theme which will provide a complete package of joy, esctacy and euphoria.
+                So, be ready to lose yourself in 3 days of fun.    
+            </p>
+            <p class="title2"><b>The main attractions on the 3 days among lots of others:-</b></p>  
+              
+            <div class="row portfolio-container">
+                <div class="col-lg-1 col-md-1 col-sm-1 wow fadeInUp">
+                <div class="portfolio-wrap"></div></div>
+             <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp">
+                 <div class="portfolio-wrap">
+                 <h4 class="title"><a href="img/backfinal.jpg" target="_blank" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="See the full list">Day 1</a></h4>
+              <p class="title2">BIKE SHOW<br><img src="img/motobikeexpo.png" alt="" class="img-fluid" style="max-width: 80%;height:auto;margin-left:8%;"><br><br><br></p></div></div>
+                 
+            <div class="col-lg-2 col-md-2 col-sm-2 wow fadeInUp">
+                <div class="portfolio-wrap"></div></div>              
+            <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp">
+                <div class="portfolio-wrap"></div></div><div class="col-lg-1 col-md-1 col-sm-1 wow fadeInUp">
+                <div class="portfolio-wrap"></div></div>
+                          
+                          
+               <div class="col-lg-1 col-md-1 col-sm-1 wow fadeInUp">
+                <div class="portfolio-wrap"></div></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp">
+                <div class="portfolio-wrap"></div></div>
+            <div class="col-lg-2 col-md-2 col-sm-2 wow fadeInUp">
+                <div class="portfolio-wrap"></div></div>
+                 <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp">
+                <div class="portfolio-wrap">
+                     <h4 class="title"><a href="img/backfinal.jpg" target="_blank" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="See the full list"></a></h4>
+              <p class="title2">TO THE BEAT<br><img src="img/judgeposter.jpg" alt="" class="img-fluid" style="max-width: 80%;height:auto;margin-left:8%;"><br><br><br></p></div></div>
+                <div class="col-lg-1 col-md-1 col-sm-1 wow fadeInUp">
+                <div class="portfolio-wrap"></div></div>
+                          
+                <div class="col-lg-1 col-md-1 col-sm-1 wow fadeInUp">
+                <div class="portfolio-wrap"></div></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp">
+                <div class="portfolio-wrap"><h4 class="title"><a href="img/backfinal.jpg" target="_blank" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="See the full list"></a></h4>
+              <p class="title2">SLAM-POETRY<br><img src="img/slam.jpeg" alt="" class="img-fluid"style="max-width: 80%;height:auto;margin-left:8%;"><br><br></p></div></div>
+                   <div class="col-lg-2 col-md-2 col-sm-2 wow fadeInUp">
+                <div class="portfolio-wrap"></div></div>       
+                               <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp">
+                <div class="portfolio-wrap"></div></div>
+                <div class="col-lg-1 col-md-1 col-sm-1 wow fadeInUp">
+                <div class="portfolio-wrap"></div></div>
+                
+                
+                <div class="col-lg-1 col-md-1 col-sm-1 wow fadeInUp">
+                <div class="portfolio-wrap"></div></div>
+                          <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp">
+                <div class="portfolio-wrap"></div></div>
+                          <div class="col-lg-2 col-md-2 col-sm-2 wow fadeInUp">
+                <div class="portfolio-wrap"></div></div>
+                              <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp">
+                <div class="portfolio-wrap">
+                                   <h4 class="title"><a href="img/backfinal.jpg" target="_blank" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="See the full list">Day 2</a></h4>
+              <p class="title2">DJ NIGHT<br><img src="img/DJ%20NIGHT.jpg" alt="" class="img-fluid"style="max-width: 80%;height:auto;margin-left:8%;"><br><br></p></div></div>
+                <div class="col-lg-1 col-md-1 col-sm-1 wow fadeInUp">
+                <div class="portfolio-wrap"></div></div>
+                
+
+                <div class="col-lg-1 col-md-1 col-sm-1 wow fadeInUp">
+                <div class="portfolio-wrap"></div></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp">
+                <div class="portfolio-wrap">
+                                   <h4 class="title"><a href="img/backfinal.jpg" target="_blank" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="See the full list"></a></h4>
+                    <p class="title2">SILENT DJ<br><img src="img/silent%20dj-03.jpeg" alt="" class="img-fluid"style="max-width: 80%;height:auto;margin-left:8%;"><br><br></p></div></div>
+                <div class="col-lg-2 col-md-2 col-sm-2 wow fadeInUp">
+                <div class="portfolio-wrap"></div></div>
+                 <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp">
+                <div class="portfolio-wrap"></div></div>
+                <div class="col-lg-1 col-md-1 col-sm-1 wow fadeInUp">
+                <div class="portfolio-wrap"></div></div>
+                
+                
+   <div class="col-lg-1 col-md-1 col-sm-1 wow fadeInUp">
+                <div class="portfolio-wrap"></div></div>                       
+<div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp">
+                <div class="portfolio-wrap"></div></div>
+              <div class="col-lg-2 col-md-2 col-sm-2 wow fadeInUp">
+                <div class="portfolio-wrap"></div></div>            
+<div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp">
+                <div class="portfolio-wrap"><h4 class="title"><a href="img/backfinal.jpg" target="_blank" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="See the full list">Day 3</a></h4>
+              <p class="title2">STAR NIGHT<br><img src="img/STARNIGHT.jpeg" alt="" class="img-fluid"style="max-width: 80%;height:auto;margin-left:8%;"><br><br></p></div></div>
+                <div class="col-lg-1 col-md-1 col-sm-1 wow fadeInUp">
+                <div class="portfolio-wrap"></div></div>
+                
+                <div class="col-lg-1 col-md-1 col-sm-1 wow fadeInUp">
+                <div class="portfolio-wrap"></div></div>          
+                               <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp">
+                <div class="portfolio-wrap">
+                                   <h4 class="title"><a href="img/backfinal.jpg" target="_blank" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="See the full list"></a></h4>
+              <p class="title2">MR. & MS. VASSAUNT<br><img src="img/MR%20AND%20MS%20VASSAUNTf.jpg" alt="" class="img-fluid"style="max-width: 80%;height:auto;margin-left:8%;"><br><br></p></div></div>
+                       <div class="col-lg-2 col-md-2 col-sm-2 wow fadeInUp">
+                <div class="portfolio-wrap"></div></div>   
+                               <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp">
+                <div class="portfolio-wrap"></div></div>
+                <div class="col-lg-1 col-md-1 col-sm-1 wow fadeInUp">
+                <div class="portfolio-wrap"></div></div>
+                
+                 <div class="col-lg-1 col-md-1 col-sm-1 wow fadeInUp">
+                <div class="portfolio-wrap"></div></div>         
+                               <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp">
+                <div class="portfolio-wrap"></div></div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 wow fadeInUp">
+                <div class="portfolio-wrap"></div></div>  
+<div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp">
+                <div class="portfolio-wrap"><h4 class="title"><a href="img/backfinal.jpg" target="_blank" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="See the full list"></a></h4>
+              <p class="title2">STAND-UP COMEDY<br><img src="img/comedy.jpg" alt="" class="img-fluid"style="max-width: 80%;height:auto;margin-left:8%;"><br><br></p></div></div>
+                <div class="col-lg-1 col-md-1 col-sm-1 wow fadeInUp">
+                <div class="portfolio-wrap"></div></div>
+                          
+            <br><br><br>
+              </div>
+              <br>
+              <div class="newhead"><h1 class="title">
+              GAMING
+                  </h1></div>
+              <br><br>
+              <p class="title4">
+               Gamers Don't Die They Respawn "
+
+VASSAUNT 2020 has made some very flashy allowances for all the gamers out there.
+You name it and it's extant, VASSAUNT 2020 has all your highest rated games like PUBG, Counter strike, FIFA, Apex legends and everyone's favourite Ludo too.So all you gamers and gaming fanatics converge with your squad at the gaming arenas to experience your game with real thrill and tremble and win reward upto Rs 10000</p>
+              <br>
+              <div class="row portfolio-container">
+            <div class="col-lg-4 col-md-4  wow fadeInUp">
+                <div class="portfolio-wrap"><h4 class="title"><a href="img/backfinal.jpg" target="_blank" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="See the full list"></a></h4>
+              <p class="title3">PUBG<br><img src="img/PUB%20G.jpg" alt="" class="img-fluid"style="max-width: 80%;height:auto;margin-left:8%;"><br><br></p>
+                <p class="title4"></p>
+                </div></div>
+                          
+                          <div class="col-lg-4 col-md-4  wow fadeInUp">
+                <div class="portfolio-wrap"><h4 class="title"><a href="img/backfinal.jpg" target="_blank" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="See the full list"></a></h4>
+              <p class="title3">V-R GAMING<br><img src="img/v%20roadies.jpg" alt="" class="img-fluid"style="max-width: 80%;height:auto;margin-left:8%;"><br><br></p>
+            <p class="title4"></p>                  
+            </div></div>
+                          
+                          <div class="col-lg-4 col-md-4  wow fadeInUp">
+                <div class="portfolio-wrap"><h4 class="title"><a href="img/backfinal.jpg" target="_blank" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="See the full list"></a></h4>
+              <p class="title3">Mobile & PC GAMING<br><img src="img/Gaming%20Events.jpg" alt="" class="img-fluid"style="max-width: 80%;height:auto;margin-left:8%;"><br><br></p>
+                              <p class="title4"></p></div></div>
+                          
+              </div>
+              
+                           </div>
+              <br><br><br>
+              <div class="newhead"><h1 class="title">
+              FUN EVENTS
+                  </h1></div>
+              
+              <div class="row portfolio-container">
+                           <div class="col-lg-4 col-md-4  wow fadeInUp">
+                <div class="portfolio-wrap"><h4 class="title"><a href="img/backfinal.jpg" target="_blank" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="See the full list"></a></h4>
+              <p class="title3">Scavenger Hunt<br><img src="img/Scavenger%20Hunt.jpg" alt="" class="img-fluid"style="max-width: 80%;height:auto;margin-left:8%;"><br><br></p>
+                </div></div>
+                          
+                           <div class="col-lg-4 col-md-4  wow fadeInUp">
+                <div class="portfolio-wrap"><h4 class="title"><a href="img/backfinal.jpg" target="_blank" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="See the full list"></a></h4>
+              <p class="title3">Paint-ball<br><img src="img/paintball-05.jpeg" alt="" class="img-fluid"style="max-width: 80%;height:auto;margin-left:8%;"><br><br></p>
+                 </div></div>
+                          
+                           <div class="col-lg-4 col-md-4  wow fadeInUp">
+                <div class="portfolio-wrap"><h4 class="title"><a href="img/backfinal.jpg" target="_blank" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="See the full list"></a></h4>
+              <p class="title3">V Roadies<br><img src="img/VRoadies.jpg" alt="" class="img-fluid"style="max-width: 80%;height:auto;margin-left:8%;"><br><br></p>
+               </div></div>
+             
+                <div class="col-lg-4 col-md-4  wow fadeInUp">
+                <div class="portfolio-wrap"></div></div>
+                  
+                <div class="col-lg-4 col-md-4  wow fadeInUp">
+                <div class="portfolio-wrap"><h4 class="title"><a href="img/backfinal.jpg" target="_blank" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="See the full list"></a></h4>
+              <p class="title3">BODY ZORBING<br><img src="img/BODY%20ZORBING%20finalll-01.png" alt="" class="img-fluid"style="max-width: 80%;height:auto;margin-left:8%;"><br><br></p>
+                
+                  <div class="col-lg-4 col-md-4  wow fadeInUp">
+                <div class="portfolio-wrap"></div></div>
+                       <br><br>   <p class="title2" style="font-size: 20px;"><b><a href="img/backfinal.jpg" target="_blank" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="See the full list">Click here to view the Event list</a></b></p>
+            
+            </div></div>
+
+          <div class="col-lg-6 background order-lg-2 order-1 wow fadeInRight"></div>
+            </div></div></div>
+
+      
+    </section><!-- #about -->
+
+
+
+    <!--==========================
+      Services Section
+    ============================-->
+    <section id="services"  class="section-bg" >
+      <div class="container">
+        <header class="section-header"style="padding-top:0px;">
+          <h3 class="section-title" style="color:#fff;">Club Events</h3>
+            <br>
+            <p class="section-description">The Events are categorised by the club organising it.</p>
+       <div class="row portfolio-container" style="padding-top:3%">
+             <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                  <a href="emotica/emotica.html"><img src="img/emotica.jpg" class="img-fluid" alt=""style="max-width: 80%;height:auto;margin-left:8%;"></a>
+                <a href="img/emotica.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 1" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="emotica/emotica.html" target="_blank" class="link-details" title="Open in a new Tab"><i class="ion ion-android-open"></i></a>
+              </figure>
+              <div class="portfolio-info">
+                <h4><a href="emotica/emotica.html">Emotica</a></h4>
+                <p>The Dramatics club</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                  <a href="soulnvibranz/soulsnvib.html"><img src="img/logo.png" class="img-fluid" alt=""style="max-width: 80%;height:auto;margin-left:8%;"></a>
+                <a href="img/logo.png" target="_blank" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="soulnvibranz/soulsnvib.html" target="_blank" class="link-details" title="Open in a new Tab"><i class="ion ion-android-open"></i></a>
+              </figure>
+              <div class="portfolio-info">
+                <h4><a href="soulnvibranz/soulsnvib.html">Souls & Vibranz</a></h4>
+                <p>The Music and Dance club</p>
+              </div>
+            </div>
+          </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                  <a href="QUIZZINE/QUIZZINE.html"> <img src="img/logo(1).png" class="img-fluid" alt=""style="max-width: 80%;height:auto;margin-left:8%;"></a>
+                <a href="img/logo(1).png" class="link-preview" data-lightbox="portfolio" data-title="Card 1" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="QUIZZINE/QUIZZINE.html" target="_blank" class="link-details" title="Open in a new Tab"><i class="ion ion-android-open"></i></a>
+              </figure>
+              <div class="portfolio-info">
+                <h4><a href="QUIZZINE/QUIZZINE.html">Quizzine</a></h4>
+                <p>The Quizzing club</p>
+              </div>
+            </div>
+          </div>
+             <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                  <a href="pixels/pixel.html"><img src="img/pixels2.jpg" class="img-fluid" style="max-width: 80%;height:auto;margin-left:8%;"alt=""></a>
+                <a href="img/pixels2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 1" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="pixels/pixel.html" target="_blank" class="link-details" title="Open in a new Tab"><i class="ion ion-android-open"></i></a>
+              </figure>
+              <div class="portfolio-info">
+                <h4><a href="pixels/pixel.html">Pixel</a></h4>
+                <p>The Photography & Art club</p>
+              </div>
+            </div>
+          </div>
+           <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                  <a href="AVC/avc.html"> <img src="img/logoa.png" class="img-fluid" alt=""style="max-width: 80%;height:auto;margin-left:8%;"></a>
+                <a href="img/logoa.png" class="link-preview" data-lightbox="portfolio" data-title="Card 1" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="AVC/avc.html" target="_blank" class="link-details" title="Open in a new Tab"><i class="ion ion-android-open"></i></a>
+              </figure>
+              <div class="portfolio-info">
+                <h4><a href="AVC/avc.html">Audio Visual Club</a></h4>
+                <p>The Film-making club</p>
+              </div>
+            </div>
+          </div>
+             <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                  <a href="Literarysociety/ls.html"><img src="img/litsoc.jpg" class="img-fluid" alt=""style="max-width: 80%;height:auto;margin-left:8%;"></a>
+                <a href="img/portfolio/card1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 1" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="Literarysociety/ls.html" target="_blank" class="link-details" title="Open in a new Tab"><i class="ion ion-android-open"></i></a>
+              </figure>
+              <div class="portfolio-info">
+                <h4><a href="Literarysociety/ls.html">Literary Society</a></h4>
+                <p>The Literature Club</p>
+              </div>
+            </div>
+          </div>
+            </div></header>
+      </div>
+    </section><!-- #events -->
+    <!--========================
+     Registration
+    ==========================-->
+   <section id="Registration" class="wow fadeIn">
+    <div class="container text-center"> 
+    <div class="row about-container">
+    <div class="col-lg-6 col-md-6  wow fadeInUp">
+        <div class="portfolio-wrap">
+                     
+        <h3 class="mobile">Apply here for individual registration</h3>
+        <p class="title4"> You can register here as an individual without campus ambassador <br>
+          Please fill up all the info correctly so that we can arrange things for you.</p><br>
+        <a class="cta-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSeOaJFS0837RwTwqzA-QqpibNyKdqOICeimoNJWxPOJ0Mq15Q/viewform?usp=sf_link" target="_blank">Click here</a>
+                     
+                 </div></div>
+           <div class="col-lg-6 col-md-6  wow fadeInUp">
+                 <div class="portfolio-wrap">
+            <h3 class="mobile" style="padding-top: 3%;">Apply here for Campus Ambassador</h3>
+        <p class="title4"> Represent your college<br>
+          Be in-charge of your students and enjoy added benefits<br></p><br>
+        <a class="cta-btn" href="CA/Amba.html" target="_blank">Click here</a>    
+                     
+                 </div></div>
+        </div></div></section>
+ 
+    <!--==========================
+      Photos Section
+    ============================-->
+<section id="myphotos" class="section-bg wow fadeInUp" style="background-color: #11151C;" >
+        <div class="container">
+       <div class="section-header wow fadeInUp">
+          <h3 class="section-title2">Pictures</h3>
+          <p class="section-description" >Some of the euphoric & beautiful moments captured in Vassaunt</p>
+        </div>
+          <div class="row justify-content-center">
+       
+              
+              <div class="col-md-10 col-lg-10">
+        <div class="gallery">
+            <ul>
+                <li><img src="img/photos/1.JPG"></li>
+                <li><img src="img/photos/2.JPG"></li>
+                <li><img src="img/photos/3.JPG"></li>
+                <li><img src="img/photos/4.JPG"></li> 
+                <li><img src="img/photos/5.JPG"></li>
+                <li><img src="img/photos/6.JPG"></li>
+                <li><img src="img/photos/7.JPG"></li>
+                <li><img src="img/photos/8.JPG"></li>
+                <li><img src="img/photos/9.JPG"></li>
+                <li><img src="img/photos/10.JPG"></li>
+                <li><img src="img/photos/11.JPG"></li>
+                <li><img src="img/photos/12.JPG"></li>
+            </ul>
+            </div></div></div></div>
+    <br><br><br>
+    </section><!-- #team -->
+    <!--==========================
+      Team Section
+    ============================-->
+    <section id="team">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h3 class="section-title" style="color:#FFF0D8;">Team VASSAUNT 2K20</h3>
+      
+        </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                  <div class="imgBx">
+                      <img src="img/suman%20bhai.jpeg" width="250" height="300">>
+                  </div>
+                  <div class="details">
+                      <h3 style="color: #11151C;font-weight: 700;">Suman Saraf<br><a >Secretary</a></h3>
+                  </div>
+
+              </div>
+
+              <div class="swiper-slide">
+                  <div class="imgBx">
+                      <img src="img/sandeep.jpg">
+                  </div>
+                  <div class="details">
+                    <h3 style="color: #11151C;font-weight: 700;">Sandeep Kumar Singh<br><a >Assistant Secretary</a></h3>
+                  </div>
+              </div>
+
+              <div class="swiper-slide">
+                  <div class="imgBx">
+                      <img src="img/ansuman.jpeg" width="250" height="300">
+                  </div>
+                  <div class="details">
+                    <h3 style="color: #11151C;font-weight: 700;">Ansuman Mishra<br><a >Assistant Secretary</a></h3>
+                  </div>
+              </div>
+
+              <div class="swiper-slide">
+                  <div class="imgBx">
+                      <img src="img/muskan.jpeg">
+                  </div>
+                  <div class="details">
+                    <h3 style="color: #11151C;font-weight: 700;">Muskan Garg<br><a>Assistant Secretary</a></h3>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="img/nihali.jpeg" width="250" height="300">
+                </div>
+                <div class="details">
+                  <h3 style="color: #11151C;text-align: center;font-weight: 700;">Nihali Sahu<br><a >Assistant Secretary</a></h3>
+                </div>
+            </div>
+               </div>
+         
+      </div>
+      <hr>
+
+
+      </div>
+    </section><!-- #team -->
+
+      <!-- #Sponsors -->
+     <section id="testimonials" class="section-bg wow fadeInUp">
+      <div class="container">
+
+        <div class="owl-carousel testimonials-carousel">
+         <div class="testimonial-item">
+
+            <h3 class="section-title" >Our Sponsors</h3>
+              <img src="sponsors/quote-sign-left.png" class="quote-sign-left" alt="">
+              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+          </div>
+          <div class="row">
+            <div class="col">
+            <div class="testimonial-item">
+            <img src="sponsors/dlounge2.jpg" class="testimonial-img" alt="">
+            <h4 style="font-size: 25px;">Platinum Partner</h4>
+              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+                </div>
+          </div><div class="col">
+            <div class="testimonial-item">
+              <img src="sponsors/otv.png" class="testimonial-img" alt="">
+              <h4 style="font-size: 25px;">Official Electronic Media Partner</h4>
+              <p>
+                <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+                <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+              </p>
+            </div></div><div class="col">
+            <div class="testimonial-item">
+            <img src="sponsors/orbit logo.jpeg" class="testimonial-img" alt="">
+            <h4 style="font-size: 25px;">Official Digital Partner</h4>
+            <p>
+              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+              
+              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+          </div></div></div>
+          <div class="row">
+            <div class="col">
+            <div class="testimonial-item">
+                <img src="sponsors/amazing bakers.jpeg" class="testimonial-img" alt="">
+                
+                <h4 style="font-size: 25px;">Official Bakery Partner</h4>
+                <p>
+                  <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+              
+                  <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+                </p>
+                </div></div><div class="col">
+            <div class="testimonial-item">
+            <img src="sponsors/BMT logo.jpeg" class="testimonial-img" alt="">
+            
+            <h4 style="font-size: 25px;">Official Travel Partner</h4>
+            <p>
+              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+              
+              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+          </div></div><div class="col">
+          <div class="testimonial-item">
+            <img src="sponsors/vardhan.jpg" class="testimonial-img" alt="">
+           
+            <h4 style="font-size: 25px;">Official Maintenance Partner</h4>
+            <p>
+              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+               
+              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+          </div>
+        </div></div><div class="row">
+          <div class="col">
+        <div class="testimonial-item">
+          <img src="sponsors/teeshood.png" class="testimonial-img" alt="" style="width:200px;height: 180px;">
+          <h4 style="font-size: 25px;">Official Merchandise Partner</h4>
+            <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+            <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+          
+        </div></div>          <div class="col">
+          <div class="testimonial-item">
+            <img src="sponsors/xdgaming.png" class="testimonial-img" alt="" style="width:200px;height: 200px;">
+            <h4 style="font-size: 25px;">Official Online Gaming Partner</h4>
+              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+            
+          </div></div>
+          <div class="col">
+            <div class="testimonial-item">
+              <img src="sponsors/SPLASH.png" class="testimonial-img" alt="" style="width:200px;height: 200px;">
+              <h4 style="font-size: 25px;">Official Water Partner</h4>
+                <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+                <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+              
+            </div></div></div><div class="row">
+              <div class="col">
+            <div class="testimonial-item">
+              <img src="sponsors/max fashion.png" class="testimonial-img" alt="" style="width:250px;height: 220px;">
+              <h4 style="font-size: 25px;">Official Fashion Partner</h4>
+                <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+                <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+              
+            </div></div>          <div class="col">
+              <div class="testimonial-item">
+                <img src="sponsors/sakshi handloom.jpg" class="testimonial-img" alt="" style="width:200px;height: 190px;">
+                <h4 style="font-size: 25px;">Official Handloom Partner</h4>
+                  <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+                  <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+                
+              </div></div>
+              <div class="col">
+                <div class="testimonial-item">
+                  <img src="sponsors/eha.jpg" class="testimonial-img" alt="" style="width:200px;height: 190px;">
+                  <h4 style="font-size: 25px;">Official Juice Partner</h4>
+                    <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+                    <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+                  
+                </div></div></div><div class="row">
+                  <div class="col">
+                <div class="testimonial-item">
+                  <img src="sponsors/D gamerz.jpg" class="testimonial-img" alt="" style="width:200px;height: 190px;">
+                  <h4 style="font-size: 25px;">Official Gaming Partner</h4>
+                    <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+                    <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+                  
+                </div></div> </div></div></div>
+    </section> */
+
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h3 class="section-title">Contact</h3>
+          <p class="section-description2">Contact us any time</p>
+        </div>
+      </div>
+
+      <!-- Uncomment below if you wan to use dynamic maps -->
+    <!--  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3712.2708387397174!2d83.9015673!3d21.4971089!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a213da4ec28af2d%3A0xb33a5cc9af8c33c7!2sVeer%20Surendra%20Sai%20University%20of%20Technology!5e0!3m2!1sen!2sin!4v1583331522829!5m2!1sen!2sin" width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+
+      <div class="container wow fadeInUp mt-5">
+        <div class="row justify-content-center">
+
+          <div class="col-lg-3 col-md-4">
+
+            <div class="info">
+              <div>
+                  <p>   <i class="fa fa-map-marker"></i></p>
+                <p>VSSUT,Burla<br>Sambalpur,Odisha<br>768018 </p>
+              </div>
+
+              <div><p>     
+                  <i class="fa fa-envelope"></i></p>
+             <p> <a href="mailto:vassaunt2k20@gmail.com">vassaunt2k20@gmail.com</a></p>
+              </div>
+
+              <div>
+            <p><br>
+| <img src="https://img.icons8.com/doodle/48/000000/whatsapp.png" alt="whatsapp-Sauryaman Nayak" width="40" height="40" /> <a href="https://wa.me/918763187421" target="_blank">Whatsapp no. +91-8763187421</a>  
+</p>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="https://mobile.twitter.com/hashtag/vassaunt" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="https://m.facebook.com/vassaunt/" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="https://instagram.com/vassaunt2020?igshid=59sy649rtl91" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/school/veer-surendra-sai-university-of-technology-vssut-burla/" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+         </div>
+       </div>
+    </div>
+    </section>
+
+  
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Designed By <br><br>
+        <div class="container">
+          <div class="row"><div class="col"><h4>Sauryaman Nayak</h4></div>
+          <div class="col"><h4> Abhipraya Dash</h4></div>
+          <div class="col"><h4> Aryan Patel</h4></div>
+        
+      </div>
+         <div class="row"><div class="col"><h4>Punyaslok Swain</h4></div>
+          <div class="col"><h4>             </h4></div>
+          <div class="col"><h4> Chinmay Pradhan</h4></div>   
+      </div>
+
+          </div></div></div>
+  </footer><!-- #footer -->
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button>
+    <style>
+    #myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 15px; /* Place the button at the bottom of the page */
+  right: 20px; /* Place the button 30px from the right */
+  z-index: 998; /* Make sure it does not overlap */
+  border: 5px #FF0000 solid; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #fff; /* Set a background color */
+  color: #FF0000; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 70px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+    </style>
+    <script>
+        //Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+    </script>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+  <script type="text/javascript" src="swiper.min.js"></script>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                effect: 'coverflow',
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: 'auto',
+                coverflowEffect: {
+                    rotate: 50,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 1,
+                    slideShadows : true,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+            });
+        </script>
+    
+</body>
 </html>
