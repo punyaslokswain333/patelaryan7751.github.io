@@ -49,6 +49,7 @@
         
         
       }
+        
         .backgroundimg{
             background-image: url('./assets/img/test2.jpg');
             background-size: cover;
@@ -97,6 +98,16 @@
             background-repeat: no-repeat;
             height: auto;
             width:100%;
+        }
+        .loader
+        {
+            width: 100%;
+            height:100%;
+            position: absolute;
+            top:0;
+            left:0;
+            background-color: #213b52;
+            
         }
         
   
@@ -391,7 +402,7 @@
           <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-left">
             <div class="card">
               <div class="card-img">
-                <img src="assets/img/p1.png" alt="...">
+                <img src="assets/img/p1.png"  alt="...">
               </div>
               <div class="card-body">
                 <h5 class="card-title"><a href="">Area Capacity Of Reservoir</a></h5>
@@ -1094,7 +1105,7 @@
     <div class="container footer-bottom clearfix">
         
       <div class="copyright">
-          <img src="assets/img/icell_black.png" width="200px" height="200px" class="img-thumbnail"></br>
+          <img src="assets/img/icell_black.png" width="200px" height="200px" class="img-thumbnail"><br>
         &copy; Copyright <strong><span>IIC</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
@@ -1102,7 +1113,7 @@
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/bocor-bootstrap-template-nice-animation/ -->
-          <img src="assets/img/LOGO.png" width="200px" height="200px" class="img-thumbnail"></br>
+          <img src="assets/img/LOGO.png" width="200px" height="200px" class="img-thumbnail"><br>
         Designed by <a href="https://bootstrapmade.com/">Team VSLV</a>
       </div>
     </div>
@@ -1121,6 +1132,28 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+    <div class="loader">
+    
+     <div class="container-fluid text-center">
+          
+   <img  src="re.png"  class="animated  
+fadeInUp delay-1s img-fluid">
+         <h1  style="color: aliceblue;font-size: 30px;"class="animated infinite  
+bounce delay-2s" >LOADING VSLV....</h1>
+          </div>
+
+    
+    
+    </div>
+    
+    <script>
+    $(window).on("load",function(){
+        
+        $(".loader").fadeOut("slow");
+    });
+    
+    
+    </script>
 
 </body>
 
