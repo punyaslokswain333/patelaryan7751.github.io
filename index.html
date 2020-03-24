@@ -25,6 +25,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+    
      <link rel="stylesheet" href="./animate.css-master/animate.css">
     <link rel="stylesheet" href="./Hover-master/css/hover.css">
 
@@ -49,7 +50,70 @@
         
         
       }
-        
+        .button67 {
+    font-size: 20px;
+    width: 230px;
+    height: 80px;
+    border-radius: 4px;
+    cursor:pointer;
+    font-family: lato;
+}
+        .ct-btn {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
+    position: relative;
+            float: left;
+}
+       .inner-width-neon {
+    background-color: transparent;
+    border: 2px solid #ffed5a;
+    color: #ffed5a;
+    -webkit-transition: all .1s ease-in-out;
+    transition: all .3s ease-in-out;
+    position: relative;
+}
+ 
+    .inner-width-neon .bg-width {
+        background-color: #fff6a8;
+        position: absolute;
+        left: 50%;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        width: 0%;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-transition: width .1s, left .1s;
+        transition: width .1s, left .1s;
+    }
+ 
+    .inner-width-neon .btn-text {
+        z-index: 1;
+    }
+ 
+.inner-width-neon:hover {
+    -webkit-box-shadow: 0px 0px 30px 20px #fff5a2;
+            box-shadow: 0px 0px 30px 20px #fff5a2;
+    border-color:#fff6a8;
+}
+ 
+.inner-width-neon:hover .bg-width {
+    width:100%;
+    left:0%;
+    z-index: -1;
+}
+ 
+.inner-width-neon:hover .btn-text {
+    color:#a79500
+}
+  
         .backgroundimg{
           background-image: url('./assets/img/vslv1-01.png');
             background-size: cover;
@@ -60,10 +124,12 @@
         }
         .backgroundimg1{
     
-            background: url('./assets/img/vslv1-01.png');
+            background:url('./img/skd-01.png') ;
                 background-attachment: fixed;
             background-repeat: no-repeat;
              background-size: cover;
+            height: auto;
+            
 
              /*background-image: url('./assets/img/vslv1-01.png');
             background-size: cover;
@@ -87,7 +153,7 @@
     
                 background-attachment: fixed;
             background-repeat: no-repeat;
-             background-size: 100%,cover;
+             background-size: cover,cover;
         height: auto;
         }
         .backgroundimg4{
@@ -121,8 +187,8 @@
       <div class="logo mr-auto">
        <!-- <h1 class="text-dark"><a href="index.html">Bocor<span>.</span></a></h1>-->
         <!-- Uncomment below if you prefer to use an image logo -->
-        <a href="index.html"><img src="assets/img/LOGO.png" class="animated swing delay-2s" alt="" class="img-thumbnail"></a>
-            <a href="index.html"><img src="assets/img/2.jpg"  width="230px" height="100px" class="animated swing delay-2s" alt="" class="img-thumbnail"></a>
+    <img src="assets/img/LOGO.png" class="animated swing delay-2s" alt="" class="img-thumbnail">
+            <img src="assets/img/2.jpg"  width="230px" height="100px" class="animated swing delay-2s" alt="" class="img-thumbnail">
           
           
       </div>
@@ -457,6 +523,66 @@ of India)</p>
           
           </div>
     </section>
+      <div class="container-fluid backgroundimg1">
+           
+        
+              
+                
+                
+      
+      <div class="row">
+          <div class="col-md-5 col-sm-4">
+          
+          <h1 style="text-align: center;
+    color: #fff;
+    font-family: raleway;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 100;
+    letter-spacing: 12px;
+    border-bottom: 1px solid #86dbff;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    color: #3cffed;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #03a9f4, 0 0 40px #03a9f4, 0 0 50px #03a9f4, 0 0 60px #03a9f4, 0 0 70px #03a9f4;" > To know more about</h1>
+      <h1 style="font-size: 30px;color: gold;text-align: justify-all;">.Objectives<br>
+              .Test Conducted<br>
+             .Achievements<br>
+              .Team<br></h1>    
+          
+          
+       <div class="container">
+           
+          <div class="ct-btn" >
+                <a class="hvr-wobble-vertical" href="index3.html"><button  style="font-size: 20px;
+    width: 230px;
+    height: 80px;
+    border-radius: 4px;
+    cursor:pointer;
+    font-family: lato;"class="inner-width-neon"
+                        ><span class="bg-width"></span><span class="btn-text">Explore us</span>
+              </button></a>
+            </div>
+            </div>
+              </div>
+ 
+          
+          
+          
+          </div>
+          
+          
+          
+          </div>
+      
+      
+      
+      
+      
+      
       
      
    
@@ -576,7 +702,7 @@ of India)</p>
     <div class="container footer-bottom clearfix">
         
       <div class="copyright">
-          <img src="assets/img/icell_black.png" width="200px" height="200px" class="img-thumbnail"><br>
+          
         &copy; Copyright <strong><span>IIC</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
@@ -584,7 +710,7 @@ of India)</p>
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/bocor-bootstrap-template-nice-animation/ -->
-          <img src="assets/img/LOGO.png" width="200px" height="200px" class="img-thumbnail"><br>
+          
         Designed by <a href="https://bootstrapmade.com/">Team VSLV</a>
       </div>
     </div>
