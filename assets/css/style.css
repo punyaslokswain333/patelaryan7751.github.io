@@ -65,9 +65,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 997;
   transition: all 0.5s;
   padding: 16px 0;
-  background:url(../../assets./../img/ty.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
+    background: #213b52;
 }
 
 #header .logo h1 {
@@ -355,7 +353,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   padding: 0 0 0 0;
-  background:url('../../assets./../img/ty.jpg');
+  background-color: #213b52;
     background-size: 100%;
 
 }
