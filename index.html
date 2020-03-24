@@ -140,27 +140,40 @@
             width:100%;*/
         } 
         
-        .backgroundimg2{
-           background:url('./img/img-2%20-%20Copy.jpg'),url(assets/img/bhk.jpg) ;
-    
-                background-attachment: fixed;
-            background-repeat:no-repeat;
-             background-size: 100%,cover;
-        height: auto;
-        }
+        
 
-        
-        
+        @media screen and (max-width:720px){
         .backgroundimg2{
-           background:url('./img/img-2.jpg'),url(assets/img/bhk.jpg) ;
+           background:url('./img/try.png'),url('./img/4mob-01.jpg') ;
     
                 background-attachment: fixed;
             background-repeat:no-repeat;
              background-size: 100%,cover;
         height: auto;
         }
+        }
+        @media screen and (min-width:720px){
+        .backgroundimg2{
+           background:url('./img/img-2.jpg'),url('./img/4mob-01.jpg') ;
+    
+                background-attachment: fixed;
+            background-repeat:no-repeat;
+             background-size: 100%,cover;
+        height: auto;
+        }
+        }
+        @media screen and (min-width:721px){
+        .backgroundimg3{
+            background:url('./img/11643.jpg') ;
+    
+                background-attachment: fixed;
+            background-repeat: no-repeat;
+             background-size: cover;
+        height: auto;
+        }
+        }
         
-        
+        @media screen and (max-width:720px){
         .backgroundimg3{
             background:url('./img/ty.jpg'),url(assets/img/bhk.jpg) ;
     
@@ -168,6 +181,7 @@
             background-repeat: no-repeat;
              background-size: cover,cover;
         height: auto;
+        }
         }
         
         .backgroundimg4{
@@ -546,7 +560,7 @@ of India)</p>
                 
       
       <div class="row">
-          <div class="col-md-6" >
+          <div class="col-md-6"  data-aos="fade-up">
               
               <img src="img/2-01.png" class="img-fluid " width="400px" height="200px">
           
