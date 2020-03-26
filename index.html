@@ -68,14 +68,55 @@
         }
         @media screen and (min-width:721px){
         .aryanmenu{
-            position: sticky;
-            top:400px;
-            left:400px;
+            position: fixed;
+            top:100px;
+            left:97%;
+            width: auto;
+
             
         }
             .check{
-                background-color:#213b52;
+                position: relative;
+                width: 100%;
+                margin: 0;
+                padding: 0;
             }
+            
+            .slider{
+              content: "";
+                position: absolute;
+                top:4px;
+                right: 28px;
+                width: 0px;
+                height: 25px;
+                background: orange;
+                border-radius: 3px;
+                transition: all 0.5s 0.3s ease;
+                
+                
+            }
+            .slider p {
+  font-family: arial;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  line-height: 25px;
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+.check:hover .slider {
+  width: 180px;
+  transition: all 0.5s ease;
+}
+            .check:hover .slider p {
+  opacity: 1;
+  transition: all 1s 0.2s ease;
+}
+
+
+
             }
         .button67 {
     font-size: 20px;
@@ -380,7 +421,7 @@
             
             
             </div>
-        <a href="#myslide" class="carousel-control-prev" role="button" data-slide="prev">
+        <a href="#myslide" class="carousel-control-prev" role="button" data-slide="prev" aria-controls="tr">
             <span class="carousel-control-prev-icon" ></span>
             <span class="sr-only">Previous</span>
             
@@ -408,12 +449,44 @@
   </section><!-- End Hero -->
 
   <main id="main">
-      <div class="check" >
+      <div  >
       <div class="aryanmenu">
-     <a href="index3.html" class="hvr-grow"> <img src="img/21-512.png" class="img-fluid" width="30px" height="30px"></a><br>
-          <a href="index3.html" class="hvr-grow"> <img src="img/825590.png" class="img-fluid" width="30px" height="30px"></a><br><a href="index3.html" class="hvr-grow"> <img src="img/trophy-circle-orange-512.png" class="img-fluid" width="30px" height="30px"></a><br><a href="index3.html" class="hvr-grow"> <img src="img/54cf0cfd8466607d037b7f25_team-icon.png" class="img-fluid" width="30px" height="30px"></a>
+          
+          <div class="check">
+     <a href="index3.html" class="hvr-grow"> <img src="img/21-512.png" class="img-fluid" width="30px" height="30px"></a>
+              <div class="slider">
+              <p>Objectives</p>
+              
+              </div>
+        
+              </div>
+          <div class="check">
+          <a href="index3.html" class="hvr-grow"> <img src="img/825590.png" class="img-fluid" width="30px" height="30px"></a>
+              <div class="slider">
+              <p>Tests Conducted</p>
+              
+              </div>
+        
+              </div>
+          <div class="check">
+              <a href="index3.html" class="hvr-grow"> <img src="img/trophy-circle-orange-512.png" class="img-fluid" width="30px" height="30px"></a>
+               <div class="slider">
+              <p>Achievements</p>
+              
+              </div>
+        
+              </div>
+               <div class="check">
+          <a href="index3.html" class="hvr-grow"> <img src="img/54cf0cfd8466607d037b7f25_team-icon.png" class="img-fluid" width="30px" height="30px"></a>
+                   <div class="slider">
+              <p>Team</p>
+              
+              </div>
+        
+              </div>
            
       </div>
+          
           
 
     <!-- ======= Clients Section ======= 
@@ -657,7 +730,8 @@ of India)</p>
       
       
       
-      
+      </div>
+
       
       
       
@@ -738,7 +812,6 @@ of India)</p>
 
       </div>
     </section><!-- End Contact Section -->
-</div>
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
