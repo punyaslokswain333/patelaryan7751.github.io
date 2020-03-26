@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>VSLV</title>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script></head>
+    <style>
+        .hover {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 60%;
+}
+
+.hover-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+ z-index: 60;
+  transition: all 0.4s;
+}
+
+.hover img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s;
+    z-index: 60;
+}
+
+.hover-content {
+  position: relative;
+  z-index: 60;
+}
+
+
+
+
+/* DEMO 3 ============================== */
+.hover-3::after {
+  content: '';
+  width: calc(100% - 3rem);
+  height: calc(100% - 3rem);
+  border: 1px solid #fff;
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  
+  transition: all 0.3s;
+  transform: scale(1.1);
+  opacity: 0;
+  display: block;
+  opacity: 0;
+}
+
+.hover-3-content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  text-align: center;
+  z-index: 60;
+}
+
+.hover-3-description {
+  opacity: 0;
+  transform: scale(1.3);
+  transition: all 0.3s;
+}
+
+.hover-3 img {
+  width: 110%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hover-3 .hover-overlay {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.hover-3:hover img {
+  width: 100%;
+}
+
+.hover-3:hover::after {
+  opacity: 1;
+  transform: none;
+}
+
+.hover-3:hover .hover-3-description {
+  opacity: 1;
+  transform: none;
+}
+
+.hover-3:hover .hover-overlay {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("img_parallax.jpg");
+
+  /* Set a specific height */
+  height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+
+  min-height: 80vh;
+  background-color: black;
+    
+}
+   .fa {
+  padding: 15px;
+  font-size: 18px;
+  width: 40px;
+  height:40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 19px 2px;
+  border-radius: 100%;
+}
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+        #yay1{
+            
+           
+            
+        }
+  body {
+      color:aliceblue;
+	 background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+	 height: 100vh;
+	 overflow: hidden;
+	 display: flex;
+	 font-family: 'Anton', sans-serif;
+	 
+	 align-items: center;
+      z-index: -1;
+}
+ .night {
+	 position: relative;
+	 width: 100%;
+	 height: 100%;
+	 transform: rotateZ(45deg);
+}
+ .shooting_star {
+	 position: absolute;
+	 left: 50%;
+	 top: 50%;
+	 height: 2px;
+	 background: linear-gradient(-45deg, rgba(95, 145, 255, 1), rgba(0, 0, 255, 0));
+	 border-radius: 999px;
+	 filter: drop-shadow(0 0 6px rgba(105, 155, 255, 1));
+	 animation: tail 3000ms ease-in-out infinite, shooting 3000ms ease-in-out infinite;
+}
+ .shooting_star::before, .shooting_star::after {
+	 content: '';
+	 position: absolute;
+	 top: calc(20% - 1px);
+	 right: 0;
+	 height: 2px;
+	 background: linear-gradient(-45deg, rgba(0, 0, 255, 0), rgba(95, 145, 255, 1), rgba(0, 0, 255, 0));
+	 transform: translateX(50%) rotateZ(45deg);
+	 border-radius: 100%;
+	 animation: shining 3000ms ease-in-out infinite;
+}
+ .shooting_star::after {
+	 transform: translateX(50%) rotateZ(-45deg);
+}
+ .shooting_star:nth-child(1) {
+	 top: calc(50% - 168px);
+	 left: calc(50% - 158px);
+	 animation-delay: 7567ms;
+}
+ .shooting_star:nth-child(1)::before, .shooting_star::after:nth-child(1), .shooting_star:nth-child(1)::after {
+	 animation-delay: 7567ms;
+}
+ .shooting_star:nth-child(2) {
+	 top: calc(50% - -93px);
+	 left: calc(50% - 92px);
+	 animation-delay: 8378ms;
+}
+ .shooting_star:nth-child(2)::before, .shooting_star::after:nth-child(2), .shooting_star:nth-child(2)::after {
+	 animation-delay: 8378ms;
+}
+ .shooting_star:nth-child(3) {
+	 top: calc(50% - 144px);
+	 left: calc(50% - 270px);
+	 animation-delay: 660ms;
+}
+ .shooting_star:nth-child(3)::before, .shooting_star::after:nth-child(3), .shooting_star:nth-child(3)::after {
+	 animation-delay: 660ms;
+}
+ .shooting_star:nth-child(4) {
+	 top: calc(50% - -141px);
+	 left: calc(50% - 190px);
+	 animation-delay: 4266ms;
+}
+ .shooting_star:nth-child(4)::before, .shooting_star::after:nth-child(4), .shooting_star:nth-child(4)::after {
+	 animation-delay: 4266ms;
+}
+ .shooting_star:nth-child(5) {
+	 top: calc(50% - 107px);
+	 left: calc(50% - 114px);
+	 animation-delay: 6974ms;
+}
+ .shooting_star:nth-child(5)::before, .shooting_star::after:nth-child(5), .shooting_star:nth-child(5)::after {
+	 animation-delay: 6974ms;
+}
+ .shooting_star:nth-child(6) {
+	 top: calc(50% - -165px);
+	 left: calc(50% - 67px);
+	 animation-delay: 1213ms;
+}
+ .shooting_star:nth-child(6)::before, .shooting_star::after:nth-child(6), .shooting_star:nth-child(6)::after {
+	 animation-delay: 1213ms;
+}
+ .shooting_star:nth-child(7) {
+	 top: calc(50% - 44px);
+	 left: calc(50% - 136px);
+	 animation-delay: 2883ms;
+}
+ .shooting_star:nth-child(7)::before, .shooting_star::after:nth-child(7), .shooting_star:nth-child(7)::after {
+	 animation-delay: 2883ms;
+}
+ .shooting_star:nth-child(8) {
+	 top: calc(50% - -183px);
+	 left: calc(50% - 290px);
+	 animation-delay: 4341ms;
+}
+ .shooting_star:nth-child(8)::before, .shooting_star::after:nth-child(8), .shooting_star:nth-child(8)::after {
+	 animation-delay: 4341ms;
+}
+ .shooting_star:nth-child(9) {
+	 top: calc(50% - -130px);
+	 left: calc(50% - 201px);
+	 animation-delay: 4491ms;
+}
+ .shooting_star:nth-child(9)::before, .shooting_star::after:nth-child(9), .shooting_star:nth-child(9)::after {
+	 animation-delay: 4491ms;
+}
+ .shooting_star:nth-child(10) {
+	 top: calc(50% - 144px);
+	 left: calc(50% - 234px);
+	 animation-delay: 748ms;
+}
+ .shooting_star:nth-child(10)::before, .shooting_star::after:nth-child(10), .shooting_star:nth-child(10)::after {
+	 animation-delay: 748ms;
+}
+ .shooting_star:nth-child(11) {
+	 top: calc(50% - -86px);
+	 left: calc(50% - 166px);
+	 animation-delay: 199ms;
+}
+ .shooting_star:nth-child(11)::before, .shooting_star::after:nth-child(11), .shooting_star:nth-child(11)::after {
+	 animation-delay: 199ms;
+}
+ .shooting_star:nth-child(12) {
+	 top: calc(50% - 150px);
+	 left: calc(50% - 82px);
+	 animation-delay: 4348ms;
+}
+ .shooting_star:nth-child(12)::before, .shooting_star::after:nth-child(12), .shooting_star:nth-child(12)::after {
+	 animation-delay: 4348ms;
+}
+ .shooting_star:nth-child(13) {
+	 top: calc(50% - -132px);
+	 left: calc(50% - 275px);
+	 animation-delay: 7036ms;
+}
+ .shooting_star:nth-child(13)::before, .shooting_star::after:nth-child(13), .shooting_star:nth-child(13)::after {
+	 animation-delay: 7036ms;
+}
+ .shooting_star:nth-child(14) {
+	 top: calc(50% - 4px);
+	 left: calc(50% - 25px);
+	 animation-delay: 2445ms;
+}
+ .shooting_star:nth-child(14)::before, .shooting_star::after:nth-child(14), .shooting_star:nth-child(14)::after {
+	 animation-delay: 2445ms;
+}
+ .shooting_star:nth-child(15) {
+	 top: calc(50% - -181px);
+	 left: calc(50% - 80px);
+	 animation-delay: 9789ms;
+}
+ .shooting_star:nth-child(15)::before, .shooting_star::after:nth-child(15), .shooting_star:nth-child(15)::after {
+	 animation-delay: 9789ms;
+}
+ .shooting_star:nth-child(16) {
+	 top: calc(50% - -110px);
+	 left: calc(50% - 27px);
+	 animation-delay: 5328ms;
+}
+ .shooting_star:nth-child(16)::before, .shooting_star::after:nth-child(16), .shooting_star:nth-child(16)::after {
+	 animation-delay: 5328ms;
+}
+ .shooting_star:nth-child(17) {
+	 top: calc(50% - -123px);
+	 left: calc(50% - 246px);
+	 animation-delay: 154ms;
+}
+ .shooting_star:nth-child(17)::before, .shooting_star::after:nth-child(17), .shooting_star:nth-child(17)::after {
+	 animation-delay: 154ms;
+}
+ .shooting_star:nth-child(18) {
+	 top: calc(50% - -86px);
+	 left: calc(50% - 57px);
+	 animation-delay: 8683ms;
+}
+ .shooting_star:nth-child(18)::before, .shooting_star::after:nth-child(18), .shooting_star:nth-child(18)::after {
+	 animation-delay: 8683ms;
+}
+ .shooting_star:nth-child(19) {
+	 top: calc(50% - -32px);
+	 left: calc(50% - 98px);
+	 animation-delay: 2730ms;
+}
+ .shooting_star:nth-child(19)::before, .shooting_star::after:nth-child(19), .shooting_star:nth-child(19)::after {
+	 animation-delay: 2730ms;
+}
+ .shooting_star:nth-child(20) {
+	 top: calc(50% - 147px);
+	 left: calc(50% - 153px);
+	 animation-delay: 3757ms;
+}
+ .shooting_star:nth-child(20)::before, .shooting_star::after:nth-child(20), .shooting_star:nth-child(20)::after {
+	 animation-delay: 3757ms;
+}
+ @keyframes tail {
+	 0% {
+		 width: 0;
+	}
+	 30% {
+		 width: 100px;
+	}
+	 100% {
+		 width: 0;
+	}
+}
+ @keyframes shining {
+	 0% {
+		 width: 0;
+	}
+	 50% {
+		 width: 30px;
+	}
+	 100% {
+		 width: 0;
+	}
+}
+ @keyframes shooting {
+	 0% {
+		 transform: translateX(0);
+	}
+	 100% {
+		 transform: translateX(300px);
+	}
+}
+ @keyframes sky {
+	 0% {
+		 transform: rotate(45deg);
+	}
+	 100% {
+		 transform: rotate(405deg);
+	}
+}
+ .center {
+  text-align: center;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: white;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+        #container {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  
+}
+#animate {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+    </style>
+
+<body>
+ <div class="container py-5">
+  <!-- For Demo Purpose -->
+  <header class="text-center">
+    <h1 class="display-4 font-weight-bold" style="color:white">Some more Achievements!</h1>
+    <p class="font-italic text-muted mb-0"></p>
+
+
+  </header>
+
+
+ <div class="parallax">
+  
+  <!-- DEMO 3 -->
+  <div class="py-5">
+    <h3 class="font-weight-bold mb-0"></h3>
+    <p class="font-italic text-muted mb-4"></p>
+    <div class="row">
+        
+      <!-- DEMO 3 Item-->
+      <div class="col-lg-6 mb-3 mb-lg-0">
+         
+        <div class="hover hover-3 text-white rounded"><img id="yay1"  src="Achieve/imgE1.png" alt="">
+          <div class="hover-overlay"></div>
+          <div class="hover-3-content px-5 py-4">
+              <h3 class="hover-3-title text-uppercase font-weight-bold mb-1"><span class="font-weight-light"></span></h3>
+            <p class="hover-3-description small text-uppercase mb-0" >Our Team VSLV interacted with Dr. Jitendra Singh Ji, Hon'ble Union Minister of State for Prime Minister Office, Personnel, Public Grievances &amp; Pensions, Dept of Atomic Energy &amp; Space ISRO - Indian Space Research Organization. <a href="https://pib.gov.in/PressReleaseIframePage.aspx?PRID=1600437"> Click here to view article!</a></p>
+              
+          </div>
+        </div>
+           
+      </div>
+      <!-- DEMO 3 Item    -->
+      <div class="col-lg-6">
+        <div class="hover hover-3 text-white rounded"><img src="Achieve/img2.png" alt="">
+          <div class="hover-overlay"></div>
+          <div class="hover-3-content px-5 py-4">
+            <h3 class="hover-3-title text-uppercase font-weight-bold mb-1"><span class="font-weight-light"> </span></h3>
+            <p class="hover-3-description small text-uppercase mb-0">Our Team VSLV interacted with Shri. Dharmendra Pradhan ji, Hon'ble Union Minister of Steel & Ministry of Petroleum and Natural Gas, Govt of India. <br><a href="https://www.facebook.com/ideaclubvssut/posts/2575192452579320?__xts__[0]=68.ARCiTuQ9JChcbwfOXh3jzNwzE_7uYxmHFmZsH7Ke4FEA6eASCAH229yCyeBNZImnCclwQHpSMT8RLNZ6i00g-CyiZ-6eHou1MYtqIyjBMRj5BTZHVLG21JaOw3fk3USNpH7sPATwT49gwN2B6cwEi3IRLu6IrQBEVncgapRFR2W8o9AS2N7B5V4RYLbjO-LkXfLqY5mP21P483CZ29cwVpxGjs7EuvRFXuD3tBPvWPQ7D5PP5VM7GYXH8EqaMuszZXRw8u_tCPKdAQN7CnnzYgXB1BfKsR-1gh-iDddvJxFWhPdtzCPBFULQmvS83uVkAkBR-vVZshMl0Sn_v6Tyn43GVw&__tn__=-R" class="fa fa-facebook"></a> </p>
+          </div>
+        </div>
+          
+      </div>
+        <div id ="container">
+  <img id ="animate" src="rocpic.png" alt="a rocket">
+</div>  
+    </div>
+     
+  </div>
+     
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+      
+     
+      <div class="center">
+  <div class="pagination">
+  <a href="background.html">&laquo;</a>
+  <a href="background.html"class="active">1</a>
+  <a href="page2.html" >2</a>
+  <a href="page3.html">3</a>
+  <a href="page4.html">4</a>
+  <a href="page5.html">5</a>
+  <a href="page6.html">6</a>
+      <a href="page7.html">7</a>
+      <a href="page8.html"  >8</a>
+      <a href="page9.html" >9</a>
+      <a href="page10.html" >10</a>
+      <a href="page11.html" >11</a>
+      <a href="page12.html" >12</a>
+      <a href="page13.html" >13</a>
+      <a href="page14.html" >14</a>
+      <a href="page15.html" >15</a>
+      
+  <a href="page2.html">&raquo;</a>
+  </div>
+</div>
+     </div> 
+<div class="night">
+    <div class="shooting_star"></div>
+   
+    
+    <div class="shooting_star"></div>
+   <div class="shooting_star"></div>
+   <div class="shooting_star"></div>
+   <div class="shooting_star"></div>
+   <div class="shooting_star"></div>
+   <div class="shooting_star"></div>
+   <div class="shooting_star"></div>
+   
+     
+    <div class="shooting_star"></div>
+   <div class="shooting_star"></div>
+   <div class="shooting_star"></div>
+   <div class="shooting_star"></div>
+   <div class="shooting_star"></div>
+   <div class="shooting_star"></div>
+   <div class="shooting_star"></div>
+   
+    
+    
+    <div class="shooting_star"></div>
+   
+</div>
+     <button style=" position: fixed;
+                            top:10px;
+                            left: 10px;
+                           background-color: lightcoral;
+                           border: none;
+                           color:white;
+                           padding: 10px;
+                           text-decoration: none;
+                           display: inline-block;
+                           margin: 4px 6px;
+                           border-ratio:12px;
+                            border-radius: 20%"><a href="index3.html">X</a></button>
+<script>
+     
+     function myMove() {
+    var elem = document.getElementById("animate");
+    var pos = 0;
+    var id = setInterval(frame, 5);
+    function frame() {
+      if (pos == 800) {
+            var id = setInterval(frame, 5);
+
+      } else {
+        pos++; 
+        elem.style.bottom = pos +"px"; 
+        elem.style.left = pos +"px"; 
+      }
+    }
+}
+     myMove();
+    
+     
+     </script>
+
+</html>
