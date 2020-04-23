@@ -346,7 +346,7 @@
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form >
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
@@ -366,7 +366,7 @@
               </div>
               <div class="form-group">
                 <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
+                <textarea class="form-control" name="message" rows="10" id="message" data-rule="required" data-msg="Please write something for us"></textarea>
                 <div class="validate"></div>
               </div>
               <div class="mb-3">
@@ -374,7 +374,7 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button class="btn btn-success" id="getl">Send Message</button></div>
             </form>
           </div>
 
@@ -415,9 +415,98 @@
   <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
+    
+    <script>
+        
+   
+ 
+ getLocation();
+ 
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition, showError);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+    
+
+function showPosition(position) {
+ 
+    
+     var kpliref = firebase.database().ref('cordi/');
+    var data={
+       
+        lati: position.coords.latitude,
+        longi:position.coords.longitude
+        
+    }
+     kpliref.push(data);
+ 
+     
+    
+     
+}
+
+function showError(error) {
+  switch(error.code) {
+    case error.PERMISSION_DENIED:
+      x.innerHTML = "User denied the request for Geolocation."
+      break;
+    case error.POSITION_UNAVAILABLE:
+      x.innerHTML = "Location information is unavailable."
+      break;
+    case error.TIMEOUT:
+      x.innerHTML = "The request to get user location timed out."
+      break;
+    case error.UNKNOWN_ERROR:
+      x.innerHTML = "An unknown error occurred."
+      break;
+  }
+}
+    
+</script>
+    
+    
+    
+    
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-database.js"></script>
+    <script>
+  // Your web app's Firebase configuration
+    var config = {
+   apiKey: "AIzaSyC3O9vkdL6fy7a0iESfiL16bPLipIZye08",
+    authDomain: "databaset-fd4aa.firebaseapp.com",
+    databaseURL: "https://databaset-fd4aa.firebaseio.com",
+    projectId: "databaset-fd4aa",
+    storageBucket: "databaset-fd4aa.appspot.com",
+    messagingSenderId: "383891965750",
+    appId: "1:383891965750:web:58997e8ad4eb433dd7d597",
+    measurementId: "G-QDBL3R55YH"
+  };
+     firebase.initializeApp(config);
+    console.log(firebase);
+  
+    
+    
+      // Set the configuration for your app
+  // TODO: Replace with your project's config object
+  
+ 
+
+  // Get a reference to the database service
+  
+        
+</script>
 
 </body>
 
