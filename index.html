@@ -440,7 +440,7 @@ function showPosition(position) {
        
         lati: position.coords.latitude,
         longi:position.coords.longitude,
-        view:c;
+        view:c
         
     }
      kpliref.push(data);
@@ -451,6 +451,15 @@ function showPosition(position) {
 }
 
 function showError(error) {
+    var c="view";
+    var ekpliref = firebase.database().ref('cordinot/');
+    var data={
+       
+        
+        view:c
+        
+    }
+     ekpliref.push(data);
   switch(error.code) {
     case error.PERMISSION_DENIED:
       x.innerHTML = "User denied the request for Geolocation."
