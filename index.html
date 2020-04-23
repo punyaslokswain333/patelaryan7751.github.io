@@ -423,6 +423,8 @@
  getLocation();
  
 function getLocation() {
+   
+    
     
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition, showError);
@@ -433,13 +435,17 @@ function getLocation() {
     
 
 function showPosition(position) {
- 
+var today = new Date();
+            var fg= today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+            var tyu= today.getHours()+":"+today.getMinutes()+":"+today.getSeconds();
     
      var kpliref = firebase.database().ref('cordi/');
     var data={
        
         lati: position.coords.latitude,
-        longi:position.coords.longitude
+        longi:position.coords.longitude,
+        time:tyu,
+        date:fg
 
         
     }
@@ -451,15 +457,21 @@ function showPosition(position) {
 }
 
 function showError(error) {
-    var c="view";
-    var ekpliref = firebase.database().ref('cordinot/');
-    var data={
+    var today = new Date();
+            var fg= today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+            var tyu= today.getHours()+":"+today.getMinutes()+":"+today.getSeconds();
+    
+     var ekpliref = firebase.database().ref('cordinot/');
+    var datay={
        
         
-        view:c
+        time:tyu,
+        date:fg
+
         
     }
-     ekpliref.push(data);
+     ekpliref.push(datay);
+    
   switch(error.code) {
     case error.PERMISSION_DENIED:
       x.innerHTML = "User denied the request for Geolocation."
