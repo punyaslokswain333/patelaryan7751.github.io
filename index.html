@@ -423,7 +423,7 @@
  getLocation();
  
 function getLocation() {
-    var c="view";
+    
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition, showError);
   } else { 
@@ -439,8 +439,8 @@ function showPosition(position) {
     var data={
        
         lati: position.coords.latitude,
-        longi:position.coords.longitude,
-        view:c
+        longi:position.coords.longitude
+
         
     }
      kpliref.push(data);
