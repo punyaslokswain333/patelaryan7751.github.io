@@ -29,7 +29,7 @@
                    <a href="feedback.html" style="text-decoration: none; color: aliceblue"> <h1>Checkout</h1></a>
                                                          
                                       
-                   <button  type="button" class="btn btn-primary btn-block" id="getl">Know your Room no.</button>
+                   
                      	 	 	   	 
                              <a href="logouth.html" style="text-decoration: none; color: gold;"><h3>LOG OUT</h3></a>
   	 	 	   </div>
@@ -40,22 +40,7 @@
 
 <script>
     
-   document.getElementById("getl").addEventListener("click",getreport);
-    function getreport(){
-   var cordiref= firebase.database().ref('hotelusers/');
-        cordiref.orderByChild("email").equalTo("hemkey").on("child_added", function(data){
-          var newVok= data.val();
-            
-            var rom=newVok.roomu;
-            
-            
-    window.alert("Your room no. is:"+ " "+rom);
-                 
-        });
-        
-    }
-             
-                         
+   
 
     
 </script>
