@@ -21,16 +21,11 @@
   	 	 	   </div>
   	 	 	   <div class="form-footer" >
                   
-
-                   <a href="roomservice.html" style="text-decoration: none; color: aliceblue"> <h1>Room Service</h1></a>
-                                      <a href="foodservice.html" style="text-decoration: none; color: aliceblue"> <h1>Food Service</h1></a>
-                                      <a href="travelservice.html" style="text-decoration: none; color: aliceblue"> <h1>Travel service</h1></a>
-                                     <a href="#" style="text-decoration: none; color: aliceblue"> <h1>Room key</h1></a>
-                   <a href="feedback.html" style="text-decoration: none; color: aliceblue"> <h1>Checkout</h1></a>
-                                                         
-                                      
-                   <button  type="button" class="btn btn-primary btn-block" id="getl">Know your Room no.</button>
-                     	 	 	   	 
+                   
+                            <a href="bill.jpg" style="text-decoration: none; color: snow;"><h1>VIEW BILL</h1></a>
+                   <br>
+                   <h1 style="color: aliceblue;font-style: italic">Thank you visit us again!!</h1>
+                  
                              <a href="logouth.html" style="text-decoration: none; color: gold;"><h3>LOG OUT</h3></a>
   	 	 	   </div>
   	 	 </div>
@@ -39,23 +34,9 @@
 
 
 <script>
+   
+  
     
-   document.getElementById("getl").addEventListener("click",getreport);
-    function getreport(){
-   var cordiref= firebase.database().ref('hotelusers/');
-        cordiref.orderByChild("email").equalTo("hemkey").on("child_added", function(data){
-          var newVok= data.val();
-            
-            var rom=newVok.roomu;
-            
-            
-    window.alert("Your room no. is:"+ " "+rom);
-                 
-        });
-        
-    }
-             
-                         
 
     
 </script>
@@ -72,14 +53,15 @@
 <script>
   // Your web app's Firebase configuration
     var config = {
-   apiKey: "AIzaSyDrK1g6vSkYTZWIB0PdNqHqzU14WqiteF4",
-    authDomain: "hotelo-4b72e.firebaseapp.com",
-    databaseURL: "https://hotelo-4b72e.firebaseio.com",
-    projectId: "hotelo-4b72e",
-    storageBucket: "hotelo-4b72e.appspot.com",
-    messagingSenderId: "276941798968",
-    appId: "1:276941798968:web:8f86142c26fcc3689330cd",
-    measurementId: "G-CZF7GR36M3"
+    apiKey: "AIzaSyDN16XLfkDqVgt5h0tpXdMgfEJ5zc1iM9c",
+    authDomain: "crime-reporting-app-4442a.firebaseapp.com",
+    databaseURL: "https://crime-reporting-app-4442a.firebaseio.com",
+    projectId: "crime-reporting-app-4442a",
+    storageBucket: "crime-reporting-app-4442a.appspot.com",
+    messagingSenderId: "524586625644",
+    appId: "1:524586625644:web:03a76475ef62c4d4b5c649",
+    measurementId: "G-FGCGMFQV2X"
+ 
   };
      firebase.initializeApp(config);
     console.log(firebase);
