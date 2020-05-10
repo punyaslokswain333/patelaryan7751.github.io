@@ -1,12 +1,5 @@
-Sliding Panels Template
-=========
-
-A simple portfolio template, with project preview images that slide out to reveal the selected project.
-
-[Article on CodyHouse](http://codyhouse.co/gem/sliding-panels-template/)
-
-[Demo](https://codyhouse.co/demo/sliding-panels-template/index.html)
- 
-[Terms](http://codyhouse.co/terms/)
-
-Images: [Unsplash](https://unsplash.com/)
+<h1><strong>This is the Official Website of Team VSLV under construction by team VSLV</strong></h1>
+<h2><strong>For changes contact</strong></h2>
+<li><a href=https://github.com/prasenjitghose36>Prasenjit Ghose</a></li>
+<li><a href=https://github.com/rajdas2001>Raj Das</a><li>
+ <li><a href=https://github.com/patelaryan7751>Aryan Patel</a><li>
