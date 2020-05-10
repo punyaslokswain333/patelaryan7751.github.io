@@ -16,6 +16,7 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -38,6 +39,84 @@
   ======================================================== -->
 </head>
     <style>
+        .site-btn {
+	display: inline-block;
+	font-weight: 700;
+	border: 4px solid;
+	min-width: 200px;
+	text-align: center;
+	padding: 19px 0;
+	position: relative;
+	background-color: transparent;
+	margin-right: 15px;
+	z-index: 1;
+}
+        
+
+.site-btn:after,
+.site-btn:before {
+	position: absolute;
+	content: "";
+	width: 26px;
+	height: 4px;
+	right: -15px;
+}
+
+.site-btn:after {
+	bottom: 8px;
+}
+
+.site-btn:before {
+	bottom: 18px;
+}
+
+.site-btn.sb-light {
+	color: #fff;
+}
+
+.site-btn.sb-light:after,
+.site-btn.sb-light:before {
+	background: #fff;
+}
+
+.site-btn.sb-dark {
+	color: #213b52;
+}
+
+.site-btn.sb-dark:after,
+.site-btn.sb-dark:before {
+	background: #213b52;
+}
+
+.site-btn.sb-solid-color {
+	background: #baff00;
+	border-color: #baff00;
+}
+
+.site-btn.sb-solid-color:after,
+.site-btn.sb-solid-color:before {
+	background: #213b52;
+}
+
+.site-btn.sb-solid-dark {
+	background: #213b52;
+	border-color: #213b52;
+	color: #baff00;
+}
+
+.site-btn.sb-solid-dark:after,
+.site-btn.sb-solid-dark:before {
+	background: #baff00;
+}
+        .site-btn:hover{
+            background-color: greenyellow;
+        }
+        .colo:hover{
+            background-color: greenyellow;
+            
+        }
+        
+        
     .rotate
       {
         animation: rotation 3s infinite linear;
@@ -90,7 +169,7 @@
                 right: 28px;
                 width: 0px;
                 height: 25px;
-                background: orange;
+                background: black;
                 border-radius: 3px;
                 transition: all 0.5s 0.3s ease;
                 
@@ -101,7 +180,7 @@
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 900;
-  color: #fff;
+  color: greenyellow;
   text-align: center;
   line-height: 25px;
   opacity: 0;
@@ -184,7 +263,7 @@
 }
   
         .backgroundimg{
-          background-image: url('./assets/img/vslv1-01.png');
+          background-color: white;
             background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
@@ -193,7 +272,7 @@
         }
         .backgroundimg1{
     
-            background:url('./img/bhk.jpg') ;
+            background-color:white;
                 background-attachment: scroll;
             background-repeat: no-repeat;
             background-position: center center;
@@ -213,7 +292,7 @@
 
         @media screen and (max-width:720px){
         .backgroundimg2{
-           background:url('./img/try.png'),url('./img/4mob-01.jpg') ;
+           background-color: whitesmoke;
     
                 background-attachment: fixed;
             background-repeat:no-repeat;
@@ -223,7 +302,7 @@
         }
         @media screen and (min-width:720px){
         .backgroundimg2{
-           background:url('./img/img-2.jpg'),url('./img/4mob-01.jpg') ;
+           background-color: whitesmoke;
     
                 background-attachment: fixed;
             background-repeat:no-repeat;
@@ -233,9 +312,7 @@
         }
         @media screen and (min-width:721px){
         .backgroundimg3{
-            background:url('./img/11643.jpg') ;
-    
-                background-attachment: fixed;
+           background-color: whitesmoke;
             background-repeat: no-repeat;
              background-size: cover;
         height: auto;
@@ -244,7 +321,7 @@
         
         @media screen and (max-width:720px){
         .backgroundimg3{
-            background:url('./img/ty.jpg'),url('./assets/img/bhk.jpg') ;
+            background-color: whitesmoke;
     
                 background-attachment: fixed;
             background-repeat: no-repeat;
@@ -254,7 +331,7 @@
         }
         
         .backgroundimg4{
-          background-image: url('./assets/img/vslv1-01.png');
+          background-color: whitesmoke;
             background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
@@ -262,7 +339,7 @@
             width:100%;
         }
         .backgroundimg5{
-           background-image: url('./assets/img/vslv1-01.png');
+        background-image: url(assets/img/vslv1-01.png);
             background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
@@ -319,7 +396,7 @@
           <li><a href="#contact">Contact Us</a></li>
             
 
-          <li class="get-started"><a href="index3.html">Explore Us</a></li>
+          <li class="get-started"><a href="#explo">Explore Us</a></li>
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -346,6 +423,7 @@
           </div>
           
     </div>-->
+      
         
         
         <div id="myslide" class="carousel slide" data-ride="carousel" data-interval="2000">
@@ -362,22 +440,15 @@
                     data-slide-to="4"></li>
                 <li  data-target="#myslide"
                     data-slide-to="5"></li>
-                <li  data-target="#myslide"
-                    data-slide-to="6"></li>
+
             
             
             
             </ol>
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="./assets/img/1slide.png" class="d-block w-100">
             
-                
-                
-            
-            </div>
-            <div class="carousel-item">
-                <img src="./assets/img/VSLV%203.2.1.JPG" class="d-block w-100">
+            <div class="carousel-item active " >
+                <img src="./assets/img/VSLV%203.2.1.png" class="d-block w-100">
              <div class="carousel-caption d-none d-sm-block">
              <h4 style="color:snow">VSLV 3.2.1</h4>
                 </div>
@@ -392,7 +463,7 @@
             </div>
             
             <div class="carousel-item">
-                <img src="./assets/img/VSLV%203.1%20.JPG" class="d-block w-100">
+                <img src="./assets/img/VSLV%203.1%20.png" class="d-block w-100">
                  <div class="carousel-caption d-none d-sm-block">
              <h4 style="color:snow">VSLV 3.1</h4>
                 </div>
@@ -407,7 +478,7 @@
             
             </div>
             
-             <div class="carousel-item">
+             <div class="carousel-item" >
                 <img src="./assets/img/Screenshot%20(32).png" class="d-block w-100">
                  <div class="carousel-caption d-none d-sm-block">
              <h4 style="color:snow">VSLV 2.0</h4>
@@ -418,7 +489,7 @@
             
             
             
-            <div class="carousel-item ">
+            <div class="carousel-item " >
                 <img src="./assets/img/VSLV%201.0.jpg" class="d-block w-100">
             <div class="carousel-caption d-none d-md-block">
                 <h4 style="color:snow">VSLV 1.0</h4>
@@ -449,14 +520,12 @@
         
         
         </div>
-        
-         
+            
    <!-- <div class="col-xl-12 text-center">
          <a href="index3.html" class="btn-get-started hvr-pulse">EXPLORE US</a>
           
           </div> -->
-      
-          
+
           
     
 
@@ -467,7 +536,7 @@
       <div class="aryanmenu">
           
           <div class="check">
-     <a href="index3.html" class="hvr-grow"> <img src="img/21-512.png" class="img-fluid" width="30px" height="30px"></a>
+     <a href="objectivesupdated.html" class="hvr-grow"> <img src="assets/img/img_451960.png" class="img-fluid" width="30px" height="30px"></a>
               <div class="slider">
               <p>Objectives</p>
               
@@ -475,7 +544,7 @@
         
               </div>
           <div class="check">
-          <a href="index3.html" class="hvr-grow"> <img src="img/825590.png" class="img-fluid" width="30px" height="30px"></a>
+          <a href="testsupdated.html" class="hvr-grow"> <img src="assets/img/icon_test.png" class="img-fluid" width="30px" height="30px"></a>
               <div class="slider">
               <p>Tests Conducted</p>
               
@@ -483,7 +552,7 @@
         
               </div>
           <div class="check">
-              <a href="index3.html" class="hvr-grow"> <img src="img/trophy-circle-orange-512.png" class="img-fluid" width="30px" height="30px"></a>
+              <a href="IICFinal/blog.html" class="hvr-grow"> <img src="assets/img/374313-200.png" class="img-fluid" width="30px" height="30px"></a>
                <div class="slider">
               <p>Achievements</p>
               
@@ -491,7 +560,7 @@
         
               </div>
                <div class="check">
-          <a href="index3.html" class="hvr-grow"> <img src="img/54cf0cfd8466607d037b7f25_team-icon.png" class="img-fluid" width="30px" height="30px"></a>
+          <a href="teamupdated.html" class="hvr-grow"> <img src="assets/img/16-512.png" class="img-fluid" width="30px" height="30px"></a>
                    <div class="slider">
               <p>Team</p>
               
@@ -559,21 +628,25 @@
       <div class="container">
            
           <div class="section-title">
-              <h2 data-aos="fade-in"  style="color: aliceblue">About Us</h2>
+              <h1 data-aos="fade-in"   style="color: #213b52; font-size: 50px;font-family: serif";>About Us</h1>
       
       
       <div class="row">
           <div class="col-md-6"data-aos="fade-right">
-          
-          <img src="models.png" class="img-fluid" >
+          <img src="assets/img/1slide.png" class="img-fluid">
+                 
           
           
           
           </div>
           
           <div class="col-md-6" data-aos="fade-left">
+              <br>
           
-          <p style="color: aliceblue;text-align: left " >The VSLV Project (VSSUT Satellite Launching Vehicle), is a student initiative, in which a team of budding technocrats take on a herculean task of developing an Indigenous Sounding Rocket and PicoSAT, by venturing into Rocket Science, through a series of ten arduous missions. A one-of-its-kind, it is India’s First Indigenous Multipurpose Reusable Student Rocketry Project, that aims to build, launch, test and recover indigenously developed Launch Vehicles and Prototype Satellites in order to provide an educational experience to students in design, flight and data analysis of a space experiment. It is intended to prepare students for an exciting, technical challenge that may lead to launching space experiments into low earth orbits and beyond.</p>
+          <p style="color: grey;text-align: left;font-family: serif;font-size: 20px" >The VSLV Project (VSSUT Satellite Launching Vehicle), is a student initiative, in which a team of budding technocrats take on a herculean task of developing an Indigenous Sounding Rocket and PicoSAT, by venturing into Rocket Science, through a series of ten arduous missions. A one-of-its-kind, it is India’s First Indigenous Multipurpose Reusable Student Rocketry Project, that aims to build, launch, test and recover indigenously developed Launch Vehicles and Prototype Satellites in order to provide an educational experience to students in design, flight and data analysis of a space experiment. It is intended to prepare students for an exciting, technical challenge that may lead to launching space experiments into low earth orbits and beyond.</p>
+              <br>
+              <br>
+                       <a href="#explo" class="site-btn sb-dark">Explore Us!</a>
           
           
           
@@ -601,7 +674,8 @@
         
       <div class="container">
           <div class="section-title">
-              <h2 data-aos="fade-in"  style="color: aliceblue">APPRECIATION</h2>
+              
+              <h1 data-aos="fade-in"  style="color: black;font-size: 50px;display: inline-block;font-family: serif;" class="colo">Appreciation</h1>
               
                 
                 </div>
@@ -613,8 +687,8 @@
 </div>
           </div>
           <div class="col-md-7 pt-4" data-aos="fade-left">
-             <h1 style="color: gold;font-size:25px">Hon'ble Prime Minister Of India-</h1><h2 style="color: aliceblue"> MR. NARENDRA MODI</h2>
-            <p class="font-italic" style="color: snow">
+             <h1 style="color: gold;font-size:25px;font-family: serif">Hon'ble Prime Minister Of India-</h1><h2 style="color: #213b52;font-family: serif"> MR. NARENDRA MODI</h2>
+            <p  style="color: grey;font-family: serif">
               Featured in <strong style="color:gold">Mann ki baat – 27 January 2019</strong>
 Hon'ble Prime Minister of India (PMO) spoke about our Team and Achievements at,
 Mann ki Baat is an Indian programme hosted by Hon'ble Prime Minister Narendra Modi in
@@ -636,8 +710,8 @@ which he addresses the people of the nation on All India Radio.
 </div>
           </div>
           <div class="col-md-7 pt-5 order-2 order-md-1" data-aos="fade-right">
-            <h1 style="color: gold;font-size:25px";>Chairperson of the Indian Space Research Organisation(ISRO)-</h1><h2 style="color: aliceblue"> DR. K.SIVAN</h2>
-            <p class="font-italic" style="color: snow">
+            <h1 style="color: gold;font-size:25px;font-family: serif";>Chairperson of the Indian Space Research Organisation(ISRO)-</h1><h2 style="color: #213b52;font-family: serif"> DR. K.SIVAN</h2>
+            <p  style="color: grey;font-family: serif">
               Chairperson of the Indian Space Research Organisation(ISRO)-DR. K.SIVAN speaking about openning a <strong style="color: gold">Inncubation center at VSSUT,BURLA.</strong> 
             </p>
             <!--<p>
@@ -656,8 +730,8 @@ which he addresses the people of the nation on All India Radio.
 </div>
           </div>
           <div class="col-md-7 pt-5" data-aos="fade-left">
-       <h1 style="color: gold;font-size:25px">Hon'ble Union Minister of Petroleum & Natural Gas and Steel-</h1><h2 style="color: aliceblue">SHRI DHARMENDRA PRADHAN</h2>
-            <p class="font-italic" style="color: snow">Hon'ble Union Minister of Petroleum & Natural Gas and Steel, Shri Dharmendra
+       <h1 style="color: gold;font-size:25px;font-family: serif">Hon'ble Union Minister of Petroleum &amp; Natural Gas and Steel-</h1><h2 style="color: #213b52;font-family: serif">SHRI DHARMENDRA PRADHAN</h2>
+            <p  style="color: grey;font-family: serif">Hon'ble Union Minister of Petroleum &amp; Natural Gas and Steel, Shri Dharmendra
 Pradhan spoke about Team VSLV of VSSUT Burla (Odisha) at the National Startup
 Conclave organised in New Delhi, by Odisha Corporate Foundation and MSME (Govt
 of India)</p>
@@ -675,68 +749,44 @@ of India)</p>
           
           </div>
     </section>
+          <section id="explo">
         
-      <div class="container-fluid backgroundimg1">
+      <div class="container-fluid backgroundimg2">
            
-        
+        <div class="section-title">
+            <br>
+             <h1 data-aos="fade-in"  style="color: black;font-family: serif; display: inline-block;font-size: 50px" class="colo">More of us</h1>
+            <br><br>
+            <div class="row">
+                <div class="col-md-3 colo" data-aos="fade-in">
+                  <a href="objectivesupdated.html" >  <img src="assets/img/img_451960.png" height="200px" width="200px" class="img_fluid"></a>
+                    <h1 style="color: black">Objectives</h1>
+                    
+                </div>
+                <br>
+                <div class="col-md-3 colo" data-aos="fade-in">
+                    
+                    <a href="testsupdated.html" > <img src="assets/img/icon_test.png" height="200px" width="200px" class="img_fluid"></a>
+                    <h1 style="color: black">Tests Done</h1>
+                    
+                </div>
+                <br>
+                <div class="col-md-3 colo" data-aos="fade-in">
+                    <a href="IICFinal/blog.html" > <img src="assets/img/374313-200.png" height="200px" width="200px" class="img_fluid"></a>
+                    <h1  style="color: black">Achievements</h1>
+                </div>
+                <br>
+                <div class="col-md-3 colo" data-aos="fade-in">
+                   <a href="teamupdated.html" >  <img src="assets/img/16-512.png" height="200px" width="200px" class="img_fluid"></a>
+                    <h1  style="color: black">Team</h1>
+                </div>
+                <br>
+            </div>
+          
+        </div>
               
                 
                 
-      
-      <div class="row">
-          <div class="col-md-6">
-              
-              <img src="img/2-01.png" class="img-fluid " width="400px" height="200px">
-          
-          
-          
-          
-          
-          </div>
-          <div class="col-md-6" >
-          
-          <h1 style="text-align: center;
-    color: #fff;
-    font-family: raleway;
-    margin-top: 20px;
-    font-size: 30px;
-    font-weight: 100;
-    letter-spacing: 12px;
-    border-bottom: 1px solid #86dbff;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    color: #3cffed;
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #03a9f4, 0 0 40px #03a9f4, 0 0 50px #03a9f4, 0 0 60px #03a9f4, 0 0 70px #03a9f4;" > To know more about us</h1>
-         
-          
-          
-       <div class="container">
-           
-          <div class="ct-btn">
-                <a class="hvr-wobble-vertical" href="index3.html"><button  style="font-size: 20px;
-    width: 230px;
-    height: 80px;
-    border-radius: 4px;
-    cursor:pointer;
-    font-family: lato; "class="inner-width-neon"
-                        ><span class="bg-width"></span><span class="btn-text">Explore us</span>
-                   </button></a>
-            </div>
-            </div>
-              </div>
- 
-          
-          
-          
-          </div>
-          
-          
-          
-          </div>
-      
       
       
       </div>
@@ -746,14 +796,14 @@ of India)</p>
       
      
    
-
+</section>
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact backgroundimg3">
       <div class="container">
 
         <div class="section-title">
-          <h2 data-aos="fade-in" style="color: aliceblue">Contact Us</h2>
-          <p data-aos="fade-in" style="color: gold">For any queries please free to contact us</p>
+          <h1 data-aos="fade-in"  style="color: black; background-color: greenyellow;display: inline-block;font-family: serif";>Contact Us</h1>
+          <p data-aos="fade-in" style="color: black;font-family: serif">For any queries please free to contact us</p>
         </div>
 
         <div class="row">
