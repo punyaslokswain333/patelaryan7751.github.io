@@ -14,7 +14,7 @@ body {
 }
 
 a {
-  color: #ffc451;
+  color: greenyellow;
 }
 
 a:hover {
@@ -139,7 +139,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo a span {
-  color: #ffc451;
+  color: greenyellow;
 }
 
 #header .logo img {
@@ -215,7 +215,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
   color: #151515;
-  background: #ffc451;
+  background: greenyellow;
 }
 
 .nav-menu .drop-down > a:after {
@@ -427,7 +427,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero h1 span {
-  color: #ffc451;
+  color: greenyellow;
 }
 
 #hero h2 {
@@ -447,7 +447,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero .icon-box i {
   font-size: 32px;
   line-height: 1;
-  color: #ffc451;
+  color: greenyellow;
 }
 
 #hero .icon-box h3 {
@@ -465,11 +465,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .icon-box h3 a:hover {
-  color: #ffc451;
+  color: greenyellow;
 }
 
 #hero .icon-box:hover {
-  border-color: #ffc451;
+  border-color: greenyellow;
 }
 
 @media (min-width: 1024px) {
@@ -563,7 +563,7 @@ section {
   font-size: 20px;
   left: 0;
   top: -3px;
-  color: #ffc451;
+  color: greenyellow;
 }
 
 .about .content p:last-child {
@@ -613,7 +613,7 @@ section {
 }
 
 .clients .owl-dot.active {
-  background-color: #ffc451 !important;
+  background-color: greenyellow !important;
 }
 
 /*--------------------------------------------------------------
@@ -636,7 +636,7 @@ section {
 .features .icon-box i {
   font-size: 48px;
   float: left;
-  color: #ffc451;
+  color: greenyellow;
 }
 
 .features .icon-box p {
@@ -667,7 +667,7 @@ section {
   margin: 0 auto;
   width: 64px;
   height: 64px;
-  background: #ffc451;
+  background: greenyellow;
   border-radius: 4px;
   display: flex;
   align-items: center;
@@ -779,7 +779,7 @@ section {
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
   color: #151515;
-  background: #ffc451;
+  background: greenyellow;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -856,7 +856,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  color: #ffc451;
+  color: greenyellow;
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -896,7 +896,7 @@ section {
 .counts .content .count-box i {
   display: block;
   font-size: 36px;
-  color: #ffc451;
+  color: greenyellow;
   float: left;
 }
 
@@ -1041,7 +1041,7 @@ section {
 }
 
 .testimonials .owl-dot.active {
-  background-color: #ffc451 !important;
+  background-color: greenyellow !important;
 }
 
 @media (min-width: 1024px) {
@@ -1098,12 +1098,12 @@ section {
   background: rgba(255, 255, 255, 0.8);
   display: inline-block;
   transition: ease-in-out 0.3s;
-  color: #ffc451;
+  color: greenyellow;
 }
 
 .team .member .social a:hover {
   color: #fff;
-  background: #ffc451;
+  background: greenyellow;
 }
 
 .team .member .social i {
@@ -1150,7 +1150,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  background: #ffc451;
+  background: greenyellow;
   color: #151515;
   float: left;
   width: 44px;
@@ -1244,7 +1244,7 @@ section {
 }
 
 .contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
-  border-color: #ffc451;
+  border-color: greenyellow;
 }
 
 .contact .php-email-form input {
@@ -1256,7 +1256,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #ffc451;
+  background: greenyellow;
   border: 0;
   padding: 10px 24px;
   color: #151515;
@@ -1366,7 +1366,7 @@ section {
 }
 
 .portfolio-details .portfolio-details-carousel .owl-dot.active {
-  background-color: #ffc451 !important;
+  background-color: greenyellow !important;
 }
 
 .portfolio-details .portfolio-info {
@@ -1452,7 +1452,7 @@ section {
 }
 
 #footer .footer-top .footer-info h3 span {
-  color: #ffc451;
+  color: greenyellow;
 }
 
 #footer .footer-top .footer-info p {
@@ -1479,7 +1479,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #ffc451;
+  background: greenyellow;
   color: #151515;
   text-decoration: none;
 }
@@ -1504,7 +1504,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #ffc451;
+  color: greenyellow;
   font-size: 18px;
   line-height: 1;
 }
@@ -1527,7 +1527,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #ffc451;
+  color: greenyellow;
 }
 
 #footer .footer-top .footer-newsletter form {
@@ -1553,7 +1553,7 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #ffc451;
+  background: greenyellow;
   color: #151515;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
