@@ -45,12 +45,86 @@
   <meta name="msapplication-TileColor" content="#213b52">
   <meta name="theme-color" content="#213b52">
 </head>
+    <style>
+     .site-btn {
+	display: inline-block;
+	font-weight: 700;
+	border: 4px solid;
+	min-width: 200px;
+	text-align: center;
+	padding: 19px 0;
+	position: relative;
+	background-color: transparent;
+	margin-right: 15px;
+	z-index: 1;
+}
+        
+
+.site-btn:after,
+.site-btn:before {
+	position: absolute;
+	content: "";
+	width: 26px;
+	height: 4px;
+	right: -15px;
+}
+
+.site-btn:after {
+	bottom: 8px;
+}
+
+.site-btn:before {
+	bottom: 18px;
+}
+
+.site-btn.sb-light {
+	color: #fff;
+}
+
+.site-btn.sb-light:after,
+.site-btn.sb-light:before {
+	background: #fff;
+}
+
+.site-btn.sb-dark {
+	color: #000;
+}
+
+.site-btn.sb-dark:after,
+.site-btn.sb-dark:before {
+	background: #000;
+}
+
+.site-btn.sb-solid-color {
+	background: #baff00;
+	border-color: #baff00;
+}
+
+.site-btn.sb-solid-color:after,
+.site-btn.sb-solid-color:before {
+	background: #000;
+}
+
+.site-btn.sb-solid-dark {
+	background: #000;
+	border-color: #000;
+	color: #baff00;
+}
+
+.site-btn.sb-solid-dark:after,
+.site-btn.sb-solid-dark:before {
+	background: #baff00;
+}
+        .site-btn:hover{
+            background-color: greenyellow;
+        }
+    
+    
+    
+    </style>
     
 <body>
-     <button type="button" style=" position: fixed;
-                             top:20px;
-                    right: 20px;
-                           " class="btn btn-success"><a href="index.html#team" style="text-decoration: none;" role="button">BACK</a></button>
+    
 	
 	<!--c-logo-part-end-->
 	<section class="main-section team" id="team">
@@ -188,7 +262,7 @@ C++.</p> -->
 						</ul>
 					</div>
 					<h3 class="wow fadeInDown delay-03s">Sourav kumar Sahoo</h3>
-					<span class="wow fadeInDown delay-03s">Chief R&D</span><!--
+					<span class="wow fadeInDown delay-03s">Chief R&amp;D</span><!--
 					<p class="wow fadeInDown delay-03s">A master of Digital Sorcery and a Marketing Marvel.</p>
                     <p class="wow fadeInDown delay-06s">Skills: SEO, SMO, SEM, Traditional Marketing</p>-->
 				</div>
