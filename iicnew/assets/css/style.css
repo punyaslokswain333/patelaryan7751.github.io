@@ -66,52 +66,39 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: black;
-    height: 100vh;
+  background: #151515;
 }
 
-#preloader.text11{
-  color: white;
-  font-size: 40px;
-  font-weight: 700;
-  letter-spacing: 4px;
-  margin-bottom: 20px;
-  background: black;
-  position: relative;
-  animation: text 3s infinite;
-}
-#preloader.contain{
-  text-align: center;
+#preloader:before {
+  content: "";
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  width: 100%;
-    background: black;
-    overflow: hidden;
-}
-       #preloader .span{
-  text-transform: uppercase;
-  display: block;
-}
-
-#preloader.text12{
-  font-size: 40px;
-  color: #6ab04c;
+  top: calc(50% - 0px);
+  left: calc(50% - 30px);
+  border: 6px solid greenyellow;
+  border-top-color: #151515;
+  border-bottom-color: #151515;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
 }
 
-@keyframes text {
-  0%{
-    color: black;
-    margin-bottom: -40px;
+@-webkit-keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
   }
-  30%{
-    letter-spacing: 15px;
-    margin-bottom: -40px;
+  100% {
+    transform: rotate(360deg);
   }
-  85%{
-    letter-spacing: 8px;
-    margin-bottom: -40px;
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 
