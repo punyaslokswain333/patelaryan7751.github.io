@@ -5,7 +5,7 @@
   "background_color": "#000000",
   "display": "standalone",
   "Scope": "/ideainnovationcellwebsite",
-  "start_url": "patelaryan7751.github.io/ideainnovationcellwebsite/index.html",
+  "start_url": "/index.html",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
