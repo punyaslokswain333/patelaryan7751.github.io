@@ -4,13 +4,9 @@
   "theme_color": "#000000",
   "background_color": "#000000",
   "display": "standalone",
-<<<<<<< HEAD
-  "Scope": "/",
-  "start_url": "/index.html",
-=======
   "Scope": "/ideainnovationcellwebsite",
   "start_url": "/ideainnovationcellwebsite/index.html",
->>>>>>> 33175b07f2a28fb3af575c6c6b68754cd4bacd90
+
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
