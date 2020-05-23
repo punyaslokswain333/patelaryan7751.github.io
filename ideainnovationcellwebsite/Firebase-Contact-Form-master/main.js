@@ -14,7 +14,14 @@ firebase.initializeApp(config);
 const messaging = firebase.messaging();
 messaging.requestPermission().then(function(){
     console.log("granted");
-   getRegisterToken();
+    if(isTokenSentToServer()){
+        console.log("token sent");
+    }else
+        {
+            getRegisterToken();
+        }
+   
+    
 }).catch(function(err){
     console.log("user denied");
 });
@@ -54,6 +61,9 @@ function sendTokenToServer(currentToken) {
           'unless it changes');
     }
 
+  }
+function isTokenSentToServer() {
+    return window.localStorage.getItem('sentToServer') === '1';
   }
 
 
