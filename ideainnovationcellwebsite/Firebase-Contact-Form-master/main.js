@@ -39,7 +39,7 @@ messaging.getToken().then((currentToken) => {
     // Show permission request.
     console.log('No Instance ID token available. Request permission to generate one.');
     // Show permission UI.
-    updateUIForPushPermissionRequired();
+    
     setTokenSentToServer(false);
   }
 }).catch((err) => {
