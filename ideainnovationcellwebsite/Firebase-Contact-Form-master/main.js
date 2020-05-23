@@ -14,12 +14,9 @@ firebase.initializeApp(config);
 const messaging = firebase.messaging();
 messaging.requestPermission().then(function(){
     console.log("granted");
-    if(isTokenSentToServer()){
-        console.log("token sent");
-    }else
-        {
-            getRegisterToken();
-        }
+    
+      getRegisterToken();
+       
    
     
 }).catch(function(err){
