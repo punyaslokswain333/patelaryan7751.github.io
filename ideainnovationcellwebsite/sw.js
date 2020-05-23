@@ -1,17 +1,6 @@
 const cacheName='v2';
 self.addEventListener('install',function(event){
     console.log('{service worker} installing it...',event);
-    event.respondWith(fetch(event.request)
-                     .then(res=>{
-            const resClonei= res.clone();
-        caches
-        .open(cacheName)
-        .then(cache =>{
-          cache.put(event.request,resClonei);
-        });
-        return res;
-    }).catch(err=>caches.match(event.request).then(res=>res))
-                      );
 
 });
 self.addEventListener('activate',function(event){
