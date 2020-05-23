@@ -34,7 +34,7 @@ messaging.getToken().then((currentToken) => {
   if (currentToken) {
       console.log(currentToken);
     sendTokenToServer(currentToken);
-    updateUIForPushEnabled(currentToken);
+    
   } else {
     // Show permission request.
     console.log('No Instance ID token available. Request permission to generate one.');
