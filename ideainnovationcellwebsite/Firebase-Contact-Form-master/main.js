@@ -11,6 +11,24 @@ apiKey: "AIzaSyCFXQqvJGGpcNeSittYro6zy5e03itmDLg",
 };
 firebase.initializeApp(config);
 
+const messaging = firebase.messaging();
+messaging.requestPermission().then(function(){
+    console.log("granted");
+    return messaging.getToken();
+})
+ .then(function(token){
+    console.log(token);
+})
+    .catch(function(err){
+    console.log("user denied");
+});
+
+messaging.onMessage(function(payload){
+    console.log('onMessage: ',payload);
+});
+
+
+
 // Reference messages collection
 var messagesRef = firebase.database().ref('messages');
 
