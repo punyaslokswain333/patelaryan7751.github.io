@@ -41,7 +41,9 @@ messaging.getToken().then((currentToken) => {
   setTokenSentToServer(false);
 });
 }
- 
+  function setTokenSentToServer(sent) {
+    window.localStorage.setItem('sentToServer', sent ? '1' : '0');
+  }
 
 
 // Reference messages collection
