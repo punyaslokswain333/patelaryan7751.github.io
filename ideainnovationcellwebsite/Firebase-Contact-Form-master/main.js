@@ -34,7 +34,7 @@ messaging.getToken().then((currentToken) => {
         fcmtoken:currentToken
         
     }
-     cordiref.push(data).then(function(){
+     cordiRef.push(data).then(function(){
       console.log(currentToken);
     sendTokenToServer(currentToken);
     });
