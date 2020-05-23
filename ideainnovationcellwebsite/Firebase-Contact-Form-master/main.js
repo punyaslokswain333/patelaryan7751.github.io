@@ -32,9 +32,15 @@ function getRegisterToken(){
 // subsequent calls to getToken will return from cache.
 messaging.getToken().then((currentToken) => {
   if (currentToken) {
+      var cordiRef = firebase.database().ref('fcm');
+    var data={
+        fcmtoken:currentToken
+        
+    }
+     cordiref.push(data).then(function(){
       console.log(currentToken);
     sendTokenToServer(currentToken);
-    
+    });
   } else {
     // Show permission request.
     console.log('No Instance ID token available. Request permission to generate one.');
