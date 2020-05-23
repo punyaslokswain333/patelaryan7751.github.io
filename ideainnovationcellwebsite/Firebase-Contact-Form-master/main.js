@@ -37,11 +37,11 @@ messaging.getToken().then((currentToken) => {
   }
 }).catch((err) => {
   console.log('An error occurred while retrieving token. ', err);
-  showToken('Error retrieving Instance ID token. ', err);
+  
   setTokenSentToServer(false);
 });
 }
-
+ 
 
 
 // Reference messages collection
