@@ -8,6 +8,8 @@ function openCreatePostModal() {
       if(choiceResult.outcome=== 'dismissed'){
             console.log('user cancelled installation');
       } else{
+          document.querySelector('#installapp').style.display = 'none';
+         document.querySelector('#text').style.display = 'none';
         console.log('user added the app');
       }
 
