@@ -29,14 +29,17 @@ function getRegisterToken(){
 // subsequent calls to getToken will return from cache.
 messaging.getToken().then((currentToken) => {
   if (currentToken) {
+      if (!isTokenSentToServer()){
       var cordiRef = firebase.database().ref('fcm');
     var data={
         fcmtoken:currentToken
         
     }
+    
      cordiRef.push(data).then(function(){
       console.log(currentToken);
     sendTokenToServer(currentToken);
+     }
     });
   } else {
     // Show permission request.
