@@ -29,24 +29,24 @@ function getRegisterToken(){
 // subsequent calls to getToken will return from cache.
 messaging.getToken().then((currentToken) => {
   if (currentToken) {
-      if (!isTokenSentToServer()){
+      
       var cordiRef = firebase.database().ref('fcm');
     var data={
         fcmtoken:currentToken
         
     }
-    
-     cordiRef.push(data).then(function(){
+    cordiRef.push(data).then(function(){
       console.log(currentToken);
     sendTokenToServer(currentToken);
-     }
+         
     });
-  } else {
+  }else {
     // Show permission request.
     console.log('No Instance ID token available. Request permission to generate one.');
     // Show permission UI.
     
     setTokenSentToServer(false);
+  
   }
 }).catch((err) => {
   console.log('An error occurred while retrieving token. ', err);
