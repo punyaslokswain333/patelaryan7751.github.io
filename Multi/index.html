@@ -27,6 +27,7 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
+      <link href="Firebase-Contact-Form-master/style.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
 
   <!-- =======================================================
@@ -38,7 +39,20 @@
 </head>
 
 <body>
-     <a href="https://wa.me/918984048843" style="position: fixed; top: 80%; z-index: 99999998" ><img src="assets/img/whatsapp.png" width="100px" height="100px"></a>
+     <a href="https://wa.me/918984048843" id="what" style="position: fixed; top: 80%; z-index: 99999998;display: none" ><img src="assets/img/whatsapp.png" width="100px" height="100px"></a>
+    <script>
+        window.addEventListener('load',my)
+        function my()
+        
+        { setTimeout(jj,3000);
+          function jj()
+         {
+            var x=document.getElementById("what");
+             x.style.display="block";
+         }
+            
+        }
+    </script>
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
@@ -54,9 +68,9 @@
           <li class="active"><a href="index.html">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-          <li class="drop-down"><a href="">Drop Down</a>
+          <li><a href="#cta">Book a meeting</a></li>
+          <li><a href="#team">Our Advisor</a></li>
+          <!--<li class="drop-down"><a href="">Drop Down</a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
               <li class="drop-down"><a href="#">Deep Drop Down</a>
@@ -72,13 +86,13 @@
               <li><a href="#">Drop Down 3</a></li>
               <li><a href="#">Drop Down 4</a></li>
             </ul>
-          </li>
+          </li>-->
           <li><a href="#contact">Contact</a></li>
 
         </ul>
       </nav><!-- .nav-menu -->
 
-      <a href="#about" class="get-started-btn">Get Started</a>
+      <a href="http://www.sanayaadvisoryservices.com/" class="get-started-btn">Login</a>
 
     </div>
   </header><!-- End Header -->
@@ -175,13 +189,13 @@ PLAN AND MAKE IT TRUE!<br><br></h2>
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0">
             <p data-aos="fade-down">
-              Right advice at right time makes a huge difference in life. We are a group of people who are passionate about what we do and we believe in making your life planned and secured
+              Right advice at right time makes a huge difference in life. We are a group of people who are passionate about what we do and we believe in making your life planned and secured.
 
 We are financial services company made up of people like you - people who have put their saving and trust in the hands of the advisors with hope that they and their family would have brighter future.
             </p>
               
                <h2 style="font-style: italic ;color:#213b52" data-aos="fade-up">
-             "YOU NEVER PLAN TO FAIL
+             "YOU NEVER PLAN TO FAIL,
 YOU FAIL TO PLAN"
 
             </h2>
@@ -404,8 +418,8 @@ YOU FAIL TO PLAN"
 
         <div class="text-center">
           <h3>Get in touch Us</h3>
-          <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a class="cta-btn" href="#">Call To Action</a>
+          <p> We are just a click away to plan, to advice you, to give you the right guidance which you need to achieve your goals or complete your dream.</p>
+          <a class="cta-btn" href="#">Book a Meeting</a>
         </div>
 
       </div>
@@ -419,40 +433,25 @@ YOU FAIL TO PLAN"
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Team</h2>
-          <p>Check our Team</p>
+          <h2>Our Advisor</h2>
+          <p>Know about our advisor</p>
         </div>
 
         <div class="row">
 
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="member" data-aos="zoom-in" data-aos-delay="100">
-              <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Walter White</h4>
-                  <span>Chief Executive Officer</span>
-                </div>
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+        
 
-          <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.1s">
+          <div class="col-md-6" data-wow-delay="0.1s">
             <div class="member" data-aos="zoom-in" data-aos-delay="200">
               <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
-                  <h4>Sarah Jhonson</h4>
-                  <span>Product Manager</span>
+                  <h4>Swati Boundia</h4>
+                  <span>Chartered Accountant</span>
                 </div>
                 <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href="https://wa.me/918984048843"><i class="icofont-whatsapp"></i></a>
+                  <a href="tel:+918984048843"><i class="icofont-phone"></i></a>
                   <a href=""><i class="icofont-facebook"></i></a>
                   <a href=""><i class="icofont-instagram"></i></a>
                   <a href=""><i class="icofont-linkedin"></i></a>
@@ -461,41 +460,12 @@ YOU FAIL TO PLAN"
             </div>
           </div>
 
-          <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.2s">
-            <div class="member" data-aos="zoom-in" data-aos-delay="300">
-              <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>William Anderson</h4>
-                  <span>CTO</span>
-                </div>
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
+          <div class="col-md-6" data-wow-delay="0.2s">
+              
+            <h2 style="font-weight: 400"><strong style="color: #213b52;">Swati Boundia</strong> is a qualified Chartered Accountant with over 7 year experience in the field of financial planning, tax planning, GST and many more.</h2>
           </div>
 
-          <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.3s">
-            <div class="member" data-aos="zoom-in" data-aos-delay="400">
-              <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Amanda Jepson</h4>
-                  <span>Accountant</span>
-                </div>
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+         
 
         </div>
 
@@ -575,11 +545,11 @@ YOU FAIL TO PLAN"
         <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-5">
             <i class="bx bx-help-circle"></i>
-            <h4>Non consectetur a erat nam at lectus urna duis?</h4>
+            <h4>What does financial advisor do?</h4>
           </div>
           <div class="col-lg-7">
             <p>
-              Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+               Financial advisors assess the financial needs of individuals and help them with investments, tax laws, and insurance decisions. They help clients plan for short-term and long-term goals, such as education expenses and retirement. They recommend investments to match the clients' goals.
             </p>
           </div>
         </div><!-- End F.A.Q Item-->
@@ -658,13 +628,14 @@ C/O Gopban Niwas
 1st Floor, above SBI ATM, 
 Near Karnataka Bank, Budharaja
 Sambalpur-768004</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3712.6944386498917!2d83.98020441424644!3d21.4805028857554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a2117fa2eddb80f%3A0xb12f6ad98bc8ff0b!2sSanaya%20Advisory%20Services!5e0!3m2!1sen!2sin!4v1590451393616!5m2!1sen!2sin" width="300" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info-box mt-4">
                   <i class="bx bx-envelope"></i>
                   <h3>Email Us</h3>
-                  <p>Sanayaadvisory@gmail.com</p>
+                  <a href="mailto:sanayaadvisory@gmail.com" style="text-decoration: none"><p>sanayaadvisory@gmail.com</p></a>
                     
                 </div>
               </div>
@@ -672,7 +643,7 @@ Sambalpur-768004</p>
                 <div class="info-box mt-4">
                   <i class="bx bx-phone-call"></i>
                   <h3>Call Us</h3>
-                  <p>+91-8984048843</p>
+                    <a href="tel:+918984048843" style="text-decoration: none"> <p>+91-8984048843</p></a>
                 </div>
               </div>
             </div>
@@ -680,32 +651,37 @@ Sambalpur-768004</p>
           </div>
 
           <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="form-row">
-                <div class="col form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validate"></div>
-                </div>
-                <div class="col form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validate"></div>
-                </div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validate"></div>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                <div class="validate"></div>
-              </div>
-              <div class="mb-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
+             <div class="wrapper">
+      <div class="company-info">
+        
+        
+      </div>
+      <div class="contact">
+        <h3>Leave a message for us</h3>
+        <form id="contactForm">
+          <p class="full">
+            <label>Name</label>
+            <input type="text" name="name" id="name" required>
+          </p>
+          <p class="full">
+            <label>Email Address</label>
+            <input type="email" name="email" id="email" required>
+          </p>
+          <p class="full">
+            <label>Phone Number</label>
+            <input type="text" name="phone" id="phone">
+          </p>
+          <p class="full">
+            <label>Message</label>
+            <textarea name="message" rows="5" id="message"></textarea>
+          </p>
+          <p class="full">
+            <button type="submit">Submit</button>
+              </p>
+            <div class="alert">Your message has been sent</div>
+        </form>
+      </div>
+    </div>
           </div>
 
         </div>
@@ -730,8 +706,8 @@ Sambalpur-768004</p>
                   <img src="assets/img/slide/slide-2.jpg" width="300px " height="300px" class="img-fluid"><br><br>
 
                 <a href="https://www.facebook.com/" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="https://www.instagram.com/" class="instagram"><i class="bx bxl-whatsapp"></i></a>
-                  <a href="https://www.instagram.com/" class="instagram"><i class="bx bxl-google-plus"></i></a>
+                <a href="https://wa.me/918984048843" class="instagram"><i class="bx bxl-whatsapp"></i></a>
+                  <a href="mailto:sanayaadvisory@gmail.com" class="instagram"><i class="bx bx-envelope"></i></a>
 
                 <a href="https://www.linkedin.com/company/" class="linkedin"><i class="bx bxl-linkedin"></i></a> 
                   <br>
@@ -749,7 +725,7 @@ Sambalpur-768004</p>
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/multi-responsive-bootstrap-template/ -->
-    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> &amp; <a href="https://patelaryan7751.github.io/AryanPortfolio/">Aryan Patel</a>
+    Designed by <a href="https://patelaryan7751.github.io/AryanPortfolio/">Aryan Patel</a><br> Website template from <a href="https://bootstrapmade.com/">BootstrapMade</a> 
     
       </div>
           
