@@ -37,9 +37,43 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
+    <style>
+    @media (min-width:721px)
+    {
+        .check{
+            display: none;
+        }
+        }
+        @media (max-width:720px)
+    {
+        .check2{
+            display: none;
+        }
+        }
+    .btn-learn-more {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 5px;
+  transition: 0.3s;
+  line-height: 1;
+  color: #ed502e;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  margin-top: 6px;
+  border: 2px solid #ed502e;
+}
+        .colo:hover{
+            background-color: #ed502e;
+        }
+    
+    </style>
 
 <body>
-     <a href="https://wa.me/918984048843" id="what" style="position: fixed; top: 80%; z-index: 99999998;display: none" ><img src="assets/img/whatsapp.png" width="100px" height="100px"></a>
+     <a href="https://wa.me/918984048843" id="what" style="position: fixed; top: 80%; z-index: 99999998;" ><img src="assets/img/whatsapp.png" width="100px" height="100px"></a>
     <script>
         window.addEventListener('load',my)
         function my()
@@ -98,7 +132,7 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero">
+  <section id="hero" class="check">
     <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
 
       <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
@@ -106,7 +140,7 @@
       <div class="carousel-inner" role="listbox">
 
         <!-- Slide 1 -->
-        <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-1.jpg)">
+        <div class="carousel-item active" style="background-image: url(assets/grayscale-photo-of-man-woman-and-child-736428.jpg)">
           <div class="carousel-container">
             <div class="container">
                <center>
@@ -119,7 +153,7 @@
         </div>
 
         <!-- Slide 2 -->
-        <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.jpg)">
+        <div class="carousel-item" style="background-image: url(assets/microphotography-of-orange-and-blue-house-miniature-on-brown-955793.jpg)">
           <div class="carousel-container">
             <div class="container">
               <center><h2 class="animate__animated animate__fadeInDown">Move towards your goal with us</h2>
@@ -130,10 +164,10 @@
         </div>
 
         <!-- Slide 3 -->
-        <div class="carousel-item" style="background-image: url(assets/img/slide/slide-3.jpg)">
+        <div class="carousel-item" style="background-image: url(assets/cheerful-teenager-playing-with-grandmother-guess-who-game-3768177.jpg)">
           <div class="carousel-container">
             <div class="container">
-              <center><h2 class="animate__animated animate__fadeInDown">Experience the new possibilities with us</h2>
+              <center><h2 class="animate__animated animate__fadeInDown">Plan your retirement with us</h2>
               
               <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a></center>
             </div>
@@ -154,61 +188,184 @@
 
     </div>
   </section><!-- End Hero -->
+     <section id="hero" class="check2">
+    <div id="heroCarousel1" class="carousel slide carousel-fade" data-ride="carousel">
+
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+      <div class="carousel-inner" role="listbox">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url(assets/ground-group-growth-hands-461049.jpg)">
+          <div class="carousel-container">
+            <div class="container">
+               <center>
+              <h2 class="animate__animated animate__fadeInDown">Plan your financial life with us </h2>
+              
+              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+                   </center> 
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url(assets/mountains-nature-sky-vacation-130111.jpg)">
+          <div class="carousel-container">
+            <div class="container">
+              <center><h2 class="animate__animated animate__fadeInDown">Move towards your goal with us</h2>
+              
+              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a></center>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image: url(assets/happy-granddaughter-playing-guess-who-game-with-aged-3768136.jpg)">
+          <div class="carousel-container">
+            <div class="container">
+              <center><h2 class="animate__animated animate__fadeInDown">Plan your retirement with us</h2>
+              
+              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a></center>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel1" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon icofont-simple-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel1" role="button" data-slide="next">
+        <span class="carousel-control-next-icon icofont-simple-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+
+    </div>
+  </section><!-- End Hero -->
 
   <main id="main">
 
     <!-- ======= About Section ======= -->
-      <br><br>
-    <section id="about" class="about">
+       <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p class="check2">What do we offer?</p>
+                      <p class="check" style="font-size: 20px">What do we have to offer?</p>
+            
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><img src="assets/img/financial-planning.png" width="50px" height="50px"></div>
+              <h4><a href="">Financial Planning</a></h4>
+              <p>Financial planning is a step-by-step approach to meet one's life goals and it acts as a guide as you go through life's journey.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><img src="assets/img/risk-manage.png" width="50px" height="50px"></div>
+              <h4><a href="">Risk Management</a></h4>
+              <p>Risk management is the process of identifying, assessing and controlling threats to an organization's capital and earnings.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><img src="assets/img/wealth-management-1419789-1198720.png" width="50px" height="50px"></div>
+              <h4><a href="">Wealth Management</a></h4>
+              <p>Wealth management is the consultative process of meeting the needs and wants of affluent clients by providing the appropriate financial products and services</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><img src="assets/img/tax-management.png" width="50px" height="50px"></div>
+              <h4><a href="">Tax Planning</a></h4>
+              <p>Tax Planning can be understood as the activity undertaken by the assessee to reduce the tax liability.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><img src="assets/img/Retirement-plan-risk-rate-money-cash-fund-512.png" width="50px" height="50px" ></div>
+              <h4><a href="">Retirement Planning</a></h4>
+              <p>Retirement planning is identifying sources of income, estimating expenses, implementing a savings program, and managing assets and risk for achieving the retirement goals.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><img src="assets/img/insurance.png" width="50px" height="50px" ></div>
+              <h4><a href="">Insurance Planning</a></h4>
+              <p>Insurance planning is to protect yourself, your family and loved ones, your home, your assets, or your business against unexpected events</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+      
+    <section id="about" class="about" data-aos="fade-in">
+                
       <div class="container">
+          <div class="section-title">
+          <h2>Why choose us?</h2>
+          <p class="check2">As your financial planners</p>
+                                    <p class="check" style="font-size: 20px">As our financial planners</p>
+        </div>
           <div class="row">
              
-              <div class="col-lg-6" order-md-2 >
-                  <br>
-            <h2  style="font-style: italic; color:#213b52">HAVE A DREAM?
-PLAN AND MAKE IT TRUE!<br><br></h2>
-
-<p>We at <strong style="color: #213b52">SANAYA ADVISORY</strong> help you to achieve your goals and fulfill your dreams. Financial Planning accelarate your saving and helps you reach your goals easily.<p>
-              </div>
-               <div class="col-lg-6"  order-md-1>
-                  <img src="assets/img/man-in-blue-suit-999267.jpg"   style="box-shadow: 10px 10px grey" class="img-fluid">
-                  
-              </div>
-          </div>
-<br><br>
-        <div class="section-title" data-aos="fade-in">
-          <h2>About</h2>
-          <p>About Us</p>
-        </div>
-
-        <div class="row content">
-          <div class="col-lg-6">
-              <img src="assets/img/people-coffee-meeting-team-7096.jpg"  style="box-shadow: 10px 10px grey" class="img-fluid" data-aos="fade-right">
-              <br><br>
-           
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0">
-            <p data-aos="fade-down">
-              Right advice at right time makes a huge difference in life. We are a group of people who are passionate about what we do and we believe in making your life planned and secured.
-
-We are financial services company made up of people like you - people who have put their saving and trust in the hands of the advisors with hope that they and their family would have brighter future.
-            </p>
-              
-               <h2 style="font-style: italic ;color:#213b52" data-aos="fade-up">
-             "YOU NEVER PLAN TO FAIL,
-YOU FAIL TO PLAN"
+              <div class="col-12" data-aos="fade-in">
+                  <p class="check" >We at <strong style="color: #213b52">SANAYA ADVISORY SERVICES</strong>, keep you and your goals as our priority.  Not only the fulfillment of your goals is our responsibility, but we also make sure that this entire journey of making wealth becomes a safe &amp; happy journey for you.<br>
+                  We have evolved ourselves as an eminent financial planning firm that is trusted for their professional competence,relied on for their unbiased &amp; quality advisory.</p>
+                  <p class="check2" style="30px">We at <strong style="color: #213b52">SANAYA ADVISORY SERVICES</strong>, keep you and your goals as our priority.  Not only the fulfillment of your goals is our responsibility, but we also make sure that this entire journey of making wealth becomes a safe &amp; happy journey for you.<br>
+                  We have evolved ourselves as an eminent financial planning firm that is trusted for their professional competence,relied on for their unbiased &amp; quality advisory.</p>
+            
+                  <a href="#" class="btn-learn-more colo">Know More</a>
+                  <br><br>
+                  <h2 style="font-style: italic ;color:grey; font-weight: 200" data-aos="fade-up">
+             <i class="bx bxs-quote-alt-left quote-icon-left"></i>YOU NEVER PLAN TO FAIL,
+YOU JUST FAIL TO PLAN<i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                      <br>
 
             </h2>
-              
-            <ul>
-              <li><i class="ri-check-double-line"></i> Plan your financial life with us</li>
-              <li><i class="ri-check-double-line"></i> Move towards your goal with us</li>
-              <li><i class="ri-check-double-line"></i> Experience the new possibilities with us</li>
-            </ul>
-              <br>
-            <a href="#services" class="btn-learn-more">Know More</a>
-          </div>
+                  <br>
+                   
+                  
+            
+              </div>
+              <div class="container">
+                <div class="section-title" data-aos="fade-in">
+          <h2>With you always!</h2>
+         <p class="check2">Through out your life events</p>
+                                    <p class="check" style="font-size: 20px">Through out your life events</p>
         </div>
+              <div class="col-md-6" data-aos="fade-in">
+                  
+                  <p class="check" > Our team will always hold your hand when it is about your financial ups or downs. We make sure that your personal finance journey is never stressful.</p>
+                  <p class="check2" > Our team will always hold your hand when it is about your financial ups or downs. We make sure that your personal finance journey is never stressful.</p>
+                  <a href="form.html" class="btn-learn-more colo">I want to plan</a>
+                  
+                  </div>
+              <div class="col-md-6" data-aos="fade-out">
+              <br>
+              <img src="assets/img/line-bitcoin.png" class="img-fluid">
+              
+              </div>
+              </div>
+             
+          </div>
+<br><br>
+       
+        
 
       </div>
     </section><!-- End About Section -->
@@ -265,73 +422,7 @@ YOU FAIL TO PLAN"
       </div>
     </section><!-- End Counts Section -->
 
-    <!-- ======= Why Us Section ======= -->
-    
-
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Services</h2>
-          <p>Check our Services</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><img src="assets/img/financial-planning.png" width="50px" height="50px"></div>
-              <h4><a href="">Financial Planning</a></h4>
-              <p>Financial planning is a step-by-step approach to meet one's life goals and it acts as a guide as you go through life's journey.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box">
-              <div class="icon"><img src="assets/img/risk-manage.png" width="50px" height="50px"></div>
-              <h4><a href="">Risk Management</a></h4>
-              <p>Risk management is the process of identifying, assessing and controlling threats to an organization's capital and earnings.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box">
-              <div class="icon"><img src="assets/img/wealth-management-1419789-1198720.png" width="50px" height="50px"></div>
-              <h4><a href="">Wealth Management</a></h4>
-              <p>Wealth management is the consultative process of meeting the needs and wants of affluent clients by providing the appropriate financial products and services</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><img src="assets/img/tax-management.png" width="50px" height="50px"></div>
-              <h4><a href="">Tax Planning</a></h4>
-              <p>Tax Planning can be understood as the activity undertaken by the assessee to reduce the tax liability.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box">
-              <div class="icon"><img src="assets/img/Retirement-plan-risk-rate-money-cash-fund-512.png" width="50px" height="50px" ></div>
-              <h4><a href="">Retirement Planning</a></h4>
-              <p>Retirement planning is identifying sources of income, estimating expenses, implementing a savings program, and managing assets and risk for achieving the retirement goals.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box">
-              <div class="icon"><img src="assets/img/insurance.png" width="50px" height="50px" ></div>
-              <h4><a href="">Insurance Planning</a></h4>
-              <p>Insurance planning is to protect yourself, your family and loved ones, your home, your assets, or your business against unexpected events</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Services Section -->
-
-    <!-- ======= Testimonials Section ======= -->
+   
     <section id="testimonials" class="testimonials section-bg">
       <div class="container" data-aos="fade-up">
 
@@ -429,48 +520,7 @@ YOU FAIL TO PLAN"
    
 
     <!-- ======= Team Section ======= -->
-    <section id="team" class="team section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Our Advisor</h2>
-          <p>Know about our advisor</p>
-        </div>
-
-        <div class="row">
-
-        
-
-          <div class="col-md-6" data-wow-delay="0.1s">
-            <div class="member" data-aos="zoom-in" data-aos-delay="200">
-              <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Swati Boundia</h4>
-                  <span>Chartered Accountant</span>
-                </div>
-                <div class="social">
-                  <a href="https://wa.me/918984048843"><i class="icofont-whatsapp"></i></a>
-                  <a href="tel:+918984048843"><i class="icofont-phone"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6" data-wow-delay="0.2s">
-              
-            <h2 style="font-weight: 400"><strong style="color: #213b52;">Swati Boundia</strong> is a qualified Chartered Accountant with over 7 year experience in the field of financial planning, tax planning, GST and many more.</h2>
-          </div>
-
-         
-
-        </div>
-
-      </div>
-    </section><!-- End Team Section -->
+    
 
     <!-- ======= Pricing Section ======= 
     <section id="pricing" class="pricing">
@@ -616,7 +666,7 @@ YOU FAIL TO PLAN"
 
         <div class="row">
 
-          <div class="col-lg-6">
+          <div class="col-md-12">
 
             <div class="row">
               <div class="col-md-12">
@@ -628,61 +678,17 @@ C/O Gopban Niwas
 1st Floor, above SBI ATM, 
 Near Karnataka Bank, Budharaja
 Sambalpur-768004</p><br>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3712.6944386498917!2d83.98020441424644!3d21.4805028857554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a2117fa2eddb80f%3A0xb12f6ad98bc8ff0b!2sSanaya%20Advisory%20Services!5e0!3m2!1sen!2sin!4v1590451393616!5m2!1sen!2sin" width="300" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3712.6944386498917!2d83.98020441424644!3d21.4805028857554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a2117fa2eddb80f%3A0xb12f6ad98bc8ff0b!2sSanaya%20Advisory%20Services!5e0!3m2!1sen!2sin!4v1590451393616!5m2!1sen!2sin" width="99%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
               </div>
-              <div class="col-md-6">
-                <div class="info-box mt-4">
-                  <i class="bx bx-envelope"></i>
-                  <h3>Email Us</h3>
-                  <a href="mailto:sanayaadvisory@gmail.com" style="text-decoration: none"><p>sanayaadvisory@gmail.com</p></a>
-                    
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="info-box mt-4">
-                  <i class="bx bx-phone-call"></i>
-                  <h3>Call Us</h3>
-                    <a href="tel:+918984048843" style="text-decoration: none"> <p>+91-8984048843</p></a>
-                </div>
-              </div>
+             
+             
             </div>
 
           </div>
 
-          <div class="col-lg-6">
-             <div class="wrapper">
-      <div class="company-info">
+       
         
-        
-      </div>
-      <div class="contact">
-        <h3>Leave a message for us</h3>
-        <form id="contactForm">
-          <p class="full">
-            <label>Name</label>
-            <input type="text" name="name" id="name" required>
-          </p>
-          <p class="full">
-            <label>Email Address</label>
-            <input type="email" name="email" id="email" required>
-          </p>
-          <p class="full">
-            <label>Phone Number</label>
-            <input type="text" name="phone" id="phone">
-          </p>
-          <p class="full">
-            <label>Message</label>
-            <textarea name="message" rows="5" id="message"></textarea>
-          </p>
-          <p class="full">
-            <button type="submit">Submit</button>
-              </p>
-            <div class="alert">Your message has been sent</div>
-        </form>
-      </div>
-    </div>
-          </div>
 
         </div>
 
@@ -694,45 +700,70 @@ Sambalpur-768004</p><br>
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="footer-top">
-      
-      
-    
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+           <img src="assets/img/slide/slide-2.jpg" class="img-fluid">
+
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+              <br>
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+              <br>
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Financial Planning</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Risk Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Wealth Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Tax Planning</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Retirement Planning</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Insurance Planning</a></li>
+            </ul>
+          </div>
+
+         
+             <div class="col-lg-4 col-md-6">
+            <div class="footer-info">
+              <h3>Sanaya Advisory Services</h3>
+              <p class="pb-3"><em>You never plan to fail,
+you just fail to plan.</em></p>
+            
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
 
     <div class="container">
-        <center>
-       
-              
-              <div class="social-links mt-3">
-                  <img src="assets/img/slide/slide-2.jpg" width="300px " height="300px" class="img-fluid"><br><br>
-
-                <a href="https://www.facebook.com/" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="https://wa.me/918984048843" class="instagram"><i class="bx bxl-whatsapp"></i></a>
-                  <a href="mailto:sanayaadvisory@gmail.com" class="instagram"><i class="bx bx-envelope"></i></a>
-      <a href="https://www.google.com/maps/place/Sanaya+Advisory+Services/@21.4805464,83.9824,17z/data=!4m5!3m4!1s0x3a2117fa2eddb80f:0xb12f6ad98bc8ff0b!8m2!3d21.4805029!4d83.9823931" class="linkedin"><i class="bx bxl-google"></i></a> 
-                <a href="https://www.linkedin.com/company/" class="linkedin"><i class="bx bxl-linkedin"></i></a> 
-                  <br>
-                  <br>
-              </div>
-            
-            </center>
-        
       <div class="copyright">
-        &copy; Copyright <strong><span>Sanaya Advisory</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>Sanaya Advisory Services</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-<div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/multi-responsive-bootstrap-template/ -->
-    Designed by <a href="https://patelaryan7751.github.io/AryanPortfolio/">Aryan Patel</a><br> Website template from <a href="https://bootstrapmade.com/">BootstrapMade</a> 
-    
-      </div>
-          
-          
+        Designed by <a href="https://patelaryan7751.github.io/AryanPortfolio/">Aryan Patel</a><br> Website template from <a href="https://bootstrapmade.com/">BootstrapMade</a> 
       </div>
     </div>
-        </div>
   </footer><!-- End Footer -->
 
   <div id="preloader"></div>
