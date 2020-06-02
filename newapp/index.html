@@ -54,7 +54,7 @@ function getcredential() {
  }
      kpliref.set(data).then(function() {
          
-       var hjcordiref= firebase.database().ref(`fcm/${currentToken}`);
+       var hjcordiref= firebase.database().ref("fcm/");
      hjcordiref.orderByChild("fcmtoken").on("child_added", function(data){
           var newVoke= data.val();
          console.log(data.val().fcmtoken);
