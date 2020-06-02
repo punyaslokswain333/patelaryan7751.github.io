@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+        </head>
+<body>
+
+<section class="login-page">
+  	 <form>
+  	 	 <div class="box">
+  	 	 	   <div class="form-head">
+  	 	 	   	  <h2>Enter Your Details</h2>
+  	 	 	   </div>
+  	 	 	   <div class="form-body">
+  	 	 	   	  
+                   <input type="text"  id="phnno"placeholder="Enter your quantity" />
+                  
+  	 	 	   </div>
+  	 	 	   <div class="form-footer" >
+  	 	 	   	  <p id="getl" style="cursor: pointer; color: gold;" >Create</p>
+           <br><br>
+                    <p id="kk" class="animated infinite bounce delay-1s"style="color: aliceblue;display: none">Creating...</p>
+  	 	 	   </div>
+  	 	 </div>
+  	 </form>
+  </section>
+
+
+<script>
+       
+ 
+ document.getElementById("getl").addEventListener("click",getcredential);
+    
+ 
+function getcredential() {
+  
+   var fg= document.getElementById("kk");
+    if(fg.style.display==="none"){
+        fg.style.display="block";
+        
+        
+    }else{
+        fg.style.display="none";
+    }
+
+
+ 
+    
+     var kpliref = firebase.database().ref('dataq/');
+    var data={
+        quantity: document.getElementById("phnno").value,
+ }
+     kpliref.set(data).then(function() {
+         
+       var hjcordiref= firebase.database().ref("fcm/");
+     hjcordiref.orderByChild("fcmtoken").on("child_added", function(data){
+          var newVoke= data.val();
+         console.log(data.val().fcmtoken);
+         $.ajax({
+             url:'https://fcm.googleapis.com/fcm/send',
+             method: 'POST',
+             headers:{
+                 'Origin':'Access-Control-Allow-Origin',
+                 'Content-Type':'application/json',
+                 'Authorization':'key=AAAAbOjZ_eM:APA91bFjENuYJrwx7yc5SU_S8II8hzw8_RvN_yb4BmZxL2KJtNARKylWIes3EgKTpP_zofuU5abTKWyeQj-hkb_ew1gtTuUvvpcgvjDzzJFVBEck2P6Eo19VZKfyD76x4r3-EnZOp9gS'
+             },
+             data:JSON.stringify({
+                 'to':'cu9DLX4dm8o:APA91bG9DQxNqJBWSGz3BGwA-d_o4i3ELh6z6L6VBLj3V-QvAhD7Fmf1OWQCkdCqDCQEPFnxoZY4FFH3Bb-FiZWX611EMV0NcR0sDvDogEGUx2FJS65xEtuOGpGdsg8fsBM8vAVYEoxC', 'data':{'message':document.getElementById("phnno").value+' is the present quantity..'}
+             }),
+             success: function(response){
+                 console.log(response);
+             },
+             error: function(xhr,status,error){
+                 console.log(xhr.error);
+             }
+             });
+         });
+
+
+        
+window.alert("SENT!!!");
+    
+});
+     
+    
+    }
+     
+
+
+
+    
+</script>
+    <script src="bootstrap/vendor/jquery/jquery.min.js"></script>
+    <script src="bootstrap/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-database.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+    var config = {
+apiKey: "AIzaSyBC68Ro-7v9iadpGNIRU2ZKgbGL4qJyspA",
+    authDomain: "hospicare-f1c30.firebaseapp.com",
+    databaseURL: "https://hospicare-f1c30.firebaseio.com",
+    projectId: "hospicare-f1c30",
+    storageBucket: "hospicare-f1c30.appspot.com",
+    messagingSenderId: "467763068387",
+    appId: "1:467763068387:web:5b9eb2a0141cc2125434d6",
+    measurementId: "G-YS3HN5H0J1"
+ 
+  };
+     firebase.initializeApp(config);
+    console.log(firebase);
+  
+    
+    
+      // Set the configuration for your app
+  // TODO: Replace with your project's config object
+  
+ 
+
+  // Get a reference to the database service
+  
+        
+</script>
+
+</body>
+</html>
