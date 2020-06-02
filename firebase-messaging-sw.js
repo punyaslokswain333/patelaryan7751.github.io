@@ -1,5 +1,5 @@
 importScripts('https://www.gstatic.com/firebasejs/4.3.0/firebase-app.js');
-importScripts('https://www.gstatic.com/firebasejs/4.3.0/firebase-messaging.js');
+importScripts('firebase-messaging.js');
 
 var config = {
 apiKey: "AIzaSyBC68Ro-7v9iadpGNIRU2ZKgbGL4qJyspA",
@@ -17,8 +17,8 @@ const messaging= firebase.messaging();
 messaging.setBackgroundMessageHandler(function(payload){
     const title='Hello World';
     const options={
-      body:payload.data.message,
-      image:icl3.png,
+      body: payload.data.message,
+      
     };
     return self.registration.showNotification(title,options);
     

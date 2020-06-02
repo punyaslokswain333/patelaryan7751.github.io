@@ -62,12 +62,12 @@ function getcredential() {
              url:'https://fcm.googleapis.com/fcm/send',
              method: 'POST',
              headers:{
-                 'Origin':'Access-Control-Allow-Origin',
+                 
                  'Content-Type':'application/json',
                  'Authorization':'key=AAAAbOjZ_eM:APA91bFjENuYJrwx7yc5SU_S8II8hzw8_RvN_yb4BmZxL2KJtNARKylWIes3EgKTpP_zofuU5abTKWyeQj-hkb_ew1gtTuUvvpcgvjDzzJFVBEck2P6Eo19VZKfyD76x4r3-EnZOp9gS'
              },
              data:JSON.stringify({
-                 'to':'cu9DLX4dm8o:APA91bG9DQxNqJBWSGz3BGwA-d_o4i3ELh6z6L6VBLj3V-QvAhD7Fmf1OWQCkdCqDCQEPFnxoZY4FFH3Bb-FiZWX611EMV0NcR0sDvDogEGUx2FJS65xEtuOGpGdsg8fsBM8vAVYEoxC', 'data':{'message':document.getElementById("phnno").value+' is the present quantity..'}
+                 'to':'dlPf7zcmHKo:APA91bFr-q9GM3lARSxxDs31BKzNFeqvW2MqG2Yh-TubrrFqk_CulZRrjnaLyvhNS2xv6i-8F9AAyVjfp2kE5bpPjxssoJimr9ZNFFOdzHlhPBE6USnI4OLYBpOGZzaWQMEssZHlsNAc', 'data':{'message':document.getElementById("phnno").value+' is the present quantity..'}
              }),
              success: function(response){
                  console.log(response);
