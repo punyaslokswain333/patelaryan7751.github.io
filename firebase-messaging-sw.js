@@ -15,9 +15,9 @@ firebase.initializeApp(config);
 
 const messaging= firebase.messaging();
 messaging.setBackgroundMessageHandler(function(payload){
-    const title='HospiCare';
+    const title='Hospi Care';
     const options={
-      body: payload.data.message,
+      body: payload.data.message
       
     };
     return self.registration.showNotification(title,options);
