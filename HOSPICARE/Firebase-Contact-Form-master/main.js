@@ -12,6 +12,14 @@ apiKey: "AIzaSyBC68Ro-7v9iadpGNIRU2ZKgbGL4qJyspA",
 };
 firebase.initializeApp(config);
 
+var hjcordiref= firebase.database().ref("dataq/");
+     hjcordiref.orderByChild('quantity').on("child_added", function(data){
+          var newVoke = data.val();
+         console.log(data.val());
+          document.getElementById("txt").textContent=data.val();
+     });
+
+
 const messaging = firebase.messaging();
 messaging.requestPermission().then(function(){
     console.log("granted");
@@ -75,6 +83,5 @@ function isTokenSentToServer() {
 
 
 // Reference messages collection
-var messagesRef = firebase.database().ref('messages');
 
 
