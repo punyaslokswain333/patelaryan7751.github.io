@@ -54,7 +54,7 @@ function getcredential() {
  }
      kpliref.set(data).then(function() {
          
-       var hjcordiref= firebase.database().ref("fcm/");
+       var hjcordiref= firebase.database().ref(`fcm/${currentToken}`);
      hjcordiref.orderByChild("fcmtoken").on("child_added", function(data){
           var newVoke= data.val();
          console.log(data.val().fcmtoken);
@@ -67,7 +67,7 @@ function getcredential() {
                  'Authorization':'key=AAAAbOjZ_eM:APA91bFjENuYJrwx7yc5SU_S8II8hzw8_RvN_yb4BmZxL2KJtNARKylWIes3EgKTpP_zofuU5abTKWyeQj-hkb_ew1gtTuUvvpcgvjDzzJFVBEck2P6Eo19VZKfyD76x4r3-EnZOp9gS'
              },
              data:JSON.stringify({
-                 'to':'dlPf7zcmHKo:APA91bFr-q9GM3lARSxxDs31BKzNFeqvW2MqG2Yh-TubrrFqk_CulZRrjnaLyvhNS2xv6i-8F9AAyVjfp2kE5bpPjxssoJimr9ZNFFOdzHlhPBE6USnI4OLYBpOGZzaWQMEssZHlsNAc', 'data':{'message':document.getElementById("phnno").value+' is the present quantity..'}
+                 'to':data.val().fcmtoken, 'data':{'message':document.getElementById("phnno").value+' is the present quantity..'}
              }),
              success: function(response){
                  console.log(response);

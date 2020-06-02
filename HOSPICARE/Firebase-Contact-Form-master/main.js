@@ -31,12 +31,12 @@ function getRegisterToken(){
 messaging.getToken().then((currentToken) => {
   if (currentToken) {
       
-      var cordiRef = firebase.database().ref('fcm');
+      var cordiRef = firebase.database().ref(`fcm/${currentToken}`);
     var data={
         fcmtoken:currentToken
         
     }
-    cordiRef.push(data).then(function(){
+    cordiRef.set(data).then(function(){
       console.log(currentToken);
     sendTokenToServer(currentToken);
          
