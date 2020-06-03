@@ -30,17 +30,32 @@
   <link href="assets/css/style.css" rel="stylesheet">
 
   <link rel="manifest" href="manifest.json">
+     <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#FFF">
+  <meta name="apple-mobile-web-app-title" content="HOSPICARE">
+  <link rel="apple-touch-icon" href="images/icons/icon-72x72.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="images/icons/icon-96x96.png" sizes="96x96">
+  <link rel="apple-touch-icon" href="images/icons/icon-128x128.png" sizes="128x128">
+  <link rel="apple-touch-icon" href="images/icons/icon-144x144.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="images/icons/icon-152x152.png" sizes="152x152">
+  <link rel="apple-touch-icon" href="images/icons/icon-192x192.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="images/icons/icon-384x384.png" sizes="384x384">
+  <link rel="apple-touch-icon" href="images/icons/icon-512x512.png" sizes="512x512">
+  <meta name="msapplication-TileImage" content="images/icons/icon-144x144.png">
+  <meta name="msapplication-TileColor" content="#fff">
+  <meta name="theme-color" content="#fff">
   
 </head>
     
 
-<body>
+<body><section style="background-image: url(BG%20Only-01.jpg);background-size: 1000%">
     <div class="container">
 <div class="row">
     <div class="col-12">
     <center><img src="bottle-filling-up.gif" class="img-fluid"></center>
         <br>
         <center><h1 style="font-size: 40px">Amount Left:<span id="txt"></span></h1></center>
+        <center><img src="bulb-clipart-buld.png"  style="display: none;" id="installapp" class="img-fluid colo" width="100px" height="100px"><p style="display: none;" id="text">Click on the bulb to install our app.</p> </center>
         
     
     </div>
@@ -67,8 +82,9 @@
     
   <script src="./Firebase-Contact-Form-master/main.js"></script>
     
-   
-
+    </section>
+ <script src="app.js"></script>
+<script src="feed.js"></script>
 </body>
 
 </html>
