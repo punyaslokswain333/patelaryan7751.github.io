@@ -19,9 +19,21 @@ messaging.setBackgroundMessageHandler(function(payload){
     const options={
       body: payload.data.message,
       icon: payload.data.icon,
+      image:payload.data.image,
+        data:{
       click_action: payload.data.click_action
+        }
       
     };
     return self.registration.showNotification(title,options);
+    
+});
+self.addEventListener('notificationclick', function(event){
+    var action_click=event.notification.data.click_action;
+    event.notification.close();
+    
+    event.waitUntil(
+        clients.openWindow(action_click)
+    );
     
 });
