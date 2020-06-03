@@ -67,7 +67,7 @@ function getcredential() {
                  'Authorization':'key=AAAAbOjZ_eM:APA91bFjENuYJrwx7yc5SU_S8II8hzw8_RvN_yb4BmZxL2KJtNARKylWIes3EgKTpP_zofuU5abTKWyeQj-hkb_ew1gtTuUvvpcgvjDzzJFVBEck2P6Eo19VZKfyD76x4r3-EnZOp9gS'
              },
              data:JSON.stringify({
-                 'to':data.val().fcmtoken, 'data':{'message':document.getElementById("phnno").value+' is the present quantity..','icon':'/icon-512x512.png','image':'https://patelaryan7751.github.io/newapp/icon-512x512.png','click_action':'https://patelaryan7751.github.io/HOSPICARE/'}
+                 'to':data.val().fcmtoken, 'data':{'message':document.getElementById("phnno").value+' is the present quantity..','icon':'https://patelaryan7751.github.io/newapp/icon-512x512.png','image':'https://patelaryan7751.github.io/newapp/icon-512x512.png','click_action':'https://patelaryan7751.github.io/HOSPICARE/'}
              }),
              success: function(response){
                  console.log(response);
