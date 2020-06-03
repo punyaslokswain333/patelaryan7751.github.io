@@ -17,7 +17,9 @@ const messaging= firebase.messaging();
 messaging.setBackgroundMessageHandler(function(payload){
     const title='Hospi Care';
     const options={
-      body: payload.data.status
+      body: payload.data.message,
+      icon: payload.data.icon,
+      click_action: payload.data.click_action
       
     };
     return self.registration.showNotification(title,options);
