@@ -1,0 +1,129 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+
+body,
+html {
+    font: 16px/1.5 sans-serif;
+    background: #fafafa;
+    -webkit-font-smoothing: antialiased;
+}
+
+input {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    height: 2.5em;
+    text-align: center;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+    color: rgb(20, 20, 20);
+    font-weight: 700;
+    transition: all 0.2s ease;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+    margin-top: 0.5em;
+}
+
+img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+::-moz-selection {
+    background: #1990c7;
+    color: #fafafa;
+}
+::selection {
+    background: #1990c7;
+    color: #fafafa;
+}
+
+.o-container {
+    margin-top: 1.2em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.controls {
+  width: 80%;
+  margin: auto;
+}
+
+#player {
+    pointer-events: none;
+}
+
+.c-button {
+    margin-top: 1em;
+    height: 2.5em;
+    margin-right: 0.5em;
+    width: 8em;
+    padding: 1em;
+    text-align: center;
+    line-height: 0em;
+    border: none;
+    border-radius: 6px;
+    background-color: white;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+    color: rgb(20, 20, 20);
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.c-button--index {
+    margin-right: 0;
+    padding: 0;
+}
+
+.c-button:hover {
+    background-color: #1990c7;
+    color: white;
+}
+
+.timeline {
+    margin-top: 16px;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
+.slider {
+    position: relative;
+    width: 1em;
+    height: 1em;
+    background-color: white;
+    border: solid 0.15em black;
+    border-radius: 50%;
+    top: -0.65em; /* -0.5 (size * 0.5) - 0.15 (border) */
+}
+
+.time-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.lobby {
+    text-align: center;
+}
+
+.input-container {
+    width: 50%;
+    margin: 20vh auto;
+    height: 2em;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.gif {
+    margin-top: 16px;
+    width: 100%;
+}
