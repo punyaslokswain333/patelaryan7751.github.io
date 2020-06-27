@@ -1,7 +1,7 @@
 "use strict";
 
 const lanIP = `${window.location.hostname}:5000`;
-const endPoint = `http://${lanIP}/api/v1`;
+const endPoint = `https://${lanIP}/api/v1`;
 let createBtn, joinBtn, inputText;
 
 const joinedParty = function(jsonObject) {
