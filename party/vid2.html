@@ -53,7 +53,7 @@ function onPlayerStateChange(event) {
     //    The function indicates that when playing a video (state=1),
     //    the player should play for six seconds and then stop.
     if (event.data == YT.PlayerState.PLAYING && !done) {
-        setTimeout(stopVideo, 50);
+        setTimeout(stopVideo, 500);
         done = true;
     }
 }
