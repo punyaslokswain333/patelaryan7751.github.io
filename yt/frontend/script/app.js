@@ -2,7 +2,7 @@
 
 const lanIP = `${window.location.hostname}:5000`;
 const socketio = io(lanIP);
-const endPoint = `http://${lanIP}/api/v1`;
+const endPoint = `https://${lanIP}/api/v1`;
 let video, containerWidth, duration;
 let screenWidth, screenHeight;
 
